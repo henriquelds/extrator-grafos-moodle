@@ -5,12 +5,12 @@
  */
 package geragrafos;
 
-import java.awt.Color;
 
 /**
  *
  * @author Henrique
  */
+
     public class CustomVertex
     {
         private String id;

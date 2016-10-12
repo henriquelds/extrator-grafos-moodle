@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<key id="edge_weight_key" for="edge" attr.name="weight" attr.type="double">
+<default>1.0</default>
+</key>
+<key id="key0" for="node" attr.name="color" attr.type="string"/>
+<key id="key1" for="node" attr.name="id" attr.type="string"/>
+<graph edgedefault="undirected">
+<node id="2309">
+<data key="key0">black</data>
+</node>
+<node id="2310">
+<data key="key0">black</data>
+</node>
+<node id="2313">
+<data key="key0">black</data>
+</node>
+<node id="2319">
+<data key="key0">black</data>
+</node>
+<node id="2320">
+<data key="key0">black</data>
+</node>
+<node id="2130">
+<data key="key0">white</data>
+</node>
+<node id="2131">
+<data key="key0">white</data>
+</node>
+<node id="2132">
+<data key="key0">white</data>
+</node>
+<node id="2133">
+<data key="key0">white</data>
+</node>
+<node id="2134">
+<data key="key0">white</data>
+</node>
+<node id="2135">
+<data key="key0">white</data>
+</node>
+<node id="2136">
+<data key="key0">white</data>
+</node>
+<node id="2137">
+<data key="key0">white</data>
+</node>
+<node id="2138">
+<data key="key0">white</data>
+</node>
+<node id="2139">
+<data key="key0">white</data>
+</node>
+<node id="2140">
+<data key="key0">white</data>
+</node>
+<node id="2141">
+<data key="key0">white</data>
+</node>
+<node id="2142">
+<data key="key0">white</data>
+</node>
+<node id="2143">
+<data key="key0">white</data>
+</node>
+<node id="2144">
+<data key="key0">white</data>
+</node>
+<node id="2145">
+<data key="key0">white</data>
+</node>
+<node id="1889">
+<data key="key0">black</data>
+</node>
+<node id="2146">
+<data key="key0">white</data>
+</node>
+<node id="2147">
+<data key="key0">white</data>
+</node>
+<node id="2148">
+<data key="key0">white</data>
+</node>
+<node id="2149">
+<data key="key0">white</data>
+</node>
+<node id="2150">
+<data key="key0">white</data>
+</node>
+<node id="2151">
+<data key="key0">white</data>
+</node>
+<node id="2152">
+<data key="key0">white</data>
+</node>
+<node id="2153">
+<data key="key0">white</data>
+</node>
+<node id="2154">
+<data key="key0">white</data>
+</node>
+<node id="2155">
+<data key="key0">white</data>
+</node>
+<node id="2156">
+<data key="key0">white</data>
+</node>
+<node id="2157">
+<data key="key0">white</data>
+</node>
+<node id="1389">
+<data key="key0">white</data>
+</node>
+<node id="2158">
+<data key="key0">white</data>
+</node>
+<node id="2159">
+<data key="key0">white</data>
+</node>
+<node id="2160">
+<data key="key0">white</data>
+</node>
+<node id="2161">
+<data key="key0">white</data>
+</node>
+<node id="2162">
+<data key="key0">white</data>
+</node>
+<node id="2163">
+<data key="key0">white</data>
+</node>
+<node id="2164">
+<data key="key0">white</data>
+</node>
+<node id="2165">
+<data key="key0">white</data>
+</node>
+<node id="2166">
+<data key="key0">white</data>
+</node>
+<node id="2167">
+<data key="key0">white</data>
+</node>
+<node id="2168">
+<data key="key0">white</data>
+</node>
+<node id="2169">
+<data key="key0">white</data>
+</node>
+<node id="2170">
+<data key="key0">white</data>
+</node>
+<node id="2171">
+<data key="key0">white</data>
+</node>
+<node id="2172">
+<data key="key0">white</data>
+</node>
+<node id="2173">
+<data key="key0">white</data>
+</node>
+<node id="2174">
+<data key="key0">white</data>
+</node>
+<node id="2175">
+<data key="key0">white</data>
+</node>
+<node id="2176">
+<data key="key0">white</data>
+</node>
+<node id="2177">
+<data key="key0">white</data>
+</node>
+<node id="2178">
+<data key="key0">white</data>
+</node>
+<node id="2179">
+<data key="key0">white</data>
+</node>
+<node id="2180">
+<data key="key0">white</data>
+</node>
+<node id="2181">
+<data key="key0">white</data>
+</node>
+<node id="2182">
+<data key="key0">white</data>
+</node>
+<node id="2183">
+<data key="key0">white</data>
+</node>
+<node id="2184">
+<data key="key0">white</data>
+</node>
+<node id="2185">
+<data key="key0">white</data>
+</node>
+<node id="2186">
+<data key="key0">white</data>
+</node>
+<node id="2187">
+<data key="key0">white</data>
+</node>
+<node id="1931">
+<data key="key0">black</data>
+</node>
+<node id="2188">
+<data key="key0">white</data>
+</node>
+<node id="2189">
+<data key="key0">white</data>
+</node>
+<node id="2190">
+<data key="key0">white</data>
+</node>
+<node id="2191">
+<data key="key0">white</data>
+</node>
+<node id="2192">
+<data key="key0">white</data>
+</node>
+<node id="2193">
+<data key="key0">white</data>
+</node>
+<node id="2194">
+<data key="key0">white</data>
+</node>
+<node id="2195">
+<data key="key0">white</data>
+</node>
+<node id="1940">
+<data key="key0">black</data>
+</node>
+<node id="2196">
+<data key="key0">white</data>
+</node>
+<node id="2197">
+<data key="key0">white</data>
+</node>
+<node id="2198">
+<data key="key0">white</data>
+</node>
+<node id="2199">
+<data key="key0">white</data>
+</node>
+<node id="2200">
+<data key="key0">white</data>
+</node>
+<node id="1945">
+<data key="key0">black</data>
+</node>
+<node id="2201">
+<data key="key0">white</data>
+</node>
+<node id="2202">
+<data key="key0">white</data>
+</node>
+<node id="2203">
+<data key="key0">white</data>
+</node>
+<node id="2204">
+<data key="key0">white</data>
+</node>
+<node id="2205">
+<data key="key0">white</data>
+</node>
+<node id="2206">
+<data key="key0">white</data>
+</node>
+<node id="1951">
+<data key="key0">black</data>
+</node>
+<node id="2207">
+<data key="key0">white</data>
+</node>
+<node id="2208">
+<data key="key0">white</data>
+</node>
+<node id="2209">
+<data key="key0">white</data>
+</node>
+<node id="2210">
+<data key="key0">white</data>
+</node>
+<node id="2211">
+<data key="key0">white</data>
+</node>
+<node id="2212">
+<data key="key0">white</data>
+</node>
+<node id="2213">
+<data key="key0">white</data>
+</node>
+<node id="2214">
+<data key="key0">white</data>
+</node>
+<node id="2215">
+<data key="key0">white</data>
+</node>
+<node id="2216">
+<data key="key0">white</data>
+</node>
+<node id="2217">
+<data key="key0">white</data>
+</node>
+<node id="2218">
+<data key="key0">white</data>
+</node>
+<node id="2219">
+<data key="key0">white</data>
+</node>
+<node id="2220">
+<data key="key0">white</data>
+</node>
+<node id="2221">
+<data key="key0">white</data>
+</node>
+<node id="2222">
+<data key="key0">white</data>
+</node>
+<node id="2223">
+<data key="key0">white</data>
+</node>
+<node id="2224">
+<data key="key0">white</data>
+</node>
+<node id="2225">
+<data key="key0">white</data>
+</node>
+<node id="2226">
+<data key="key0">white</data>
+</node>
+<node id="2227">
+<data key="key0">white</data>
+</node>
+<node id="2228">
+<data key="key0">white</data>
+</node>
+<node id="2229">
+<data key="key0">white</data>
+</node>
+<node id="1974">
+<data key="key0">black</data>
+</node>
+<node id="2230">
+<data key="key0">white</data>
+</node>
+<node id="2231">
+<data key="key0">white</data>
+</node>
+<node id="1976">
+<data key="key0">black</data>
+</node>
+<node id="2232">
+<data key="key0">white</data>
+</node>
+<node id="2233">
+<data key="key0">white</data>
+</node>
+<node id="2234">
+<data key="key0">white</data>
+</node>
+<node id="1979">
+<data key="key0">black</data>
+</node>
+<node id="2235">
+<data key="key0">white</data>
+</node>
+<node id="1980">
+<data key="key0">black</data>
+</node>
+<node id="2236">
+<data key="key0">white</data>
+</node>
+<node id="1981">
+<data key="key0">black</data>
+</node>
+<node id="2237">
+<data key="key0">white</data>
+</node>
+<node id="1982">
+<data key="key0">black</data>
+</node>
+<node id="2238">
+<data key="key0">white</data>
+</node>
+<node id="1983">
+<data key="key0">black</data>
+</node>
+<node id="2239">
+<data key="key0">white</data>
+</node>
+<node id="1984">
+<data key="key0">black</data>
+</node>
+<node id="2240">
+<data key="key0">white</data>
+</node>
+<node id="1985">
+<data key="key0">black</data>
+</node>
+<node id="2241">
+<data key="key0">white</data>
+</node>
+<node id="1986">
+<data key="key0">black</data>
+</node>
+<node id="2242">
+<data key="key0">white</data>
+</node>
+<node id="1987">
+<data key="key0">black</data>
+</node>
+<node id="2243">
+<data key="key0">white</data>
+</node>
+<node id="1988">
+<data key="key0">black</data>
+</node>
+<node id="2244">
+<data key="key0">white</data>
+</node>
+<node id="1989">
+<data key="key0">black</data>
+</node>
+<node id="2245">
+<data key="key0">white</data>
+</node>
+<node id="1990">
+<data key="key0">black</data>
+</node>
+<node id="2246">
+<data key="key0">white</data>
+</node>
+<node id="1991">
+<data key="key0">black</data>
+</node>
+<node id="2247">
+<data key="key0">white</data>
+</node>
+<node id="1992">
+<data key="key0">black</data>
+</node>
+<node id="2248">
+<data key="key0">white</data>
+</node>
+<node id="2249">
+<data key="key0">white</data>
+</node>
+<node id="1993">
+<data key="key0">black</data>
+</node>
+<node id="2250">
+<data key="key0">white</data>
+</node>
+<node id="2251">
+<data key="key0">white</data>
+</node>
+<node id="2252">
+<data key="key0">white</data>
+</node>
+<node id="2253">
+<data key="key0">white</data>
+</node>
+<node id="2254">
+<data key="key0">white</data>
+</node>
+<node id="2255">
+<data key="key0">white</data>
+</node>
+<node id="2256">
+<data key="key0">white</data>
+</node>
+<node id="2257">
+<data key="key0">white</data>
+</node>
+<node id="2258">
+<data key="key0">white</data>
+</node>
+<node id="2259">
+<data key="key0">white</data>
+</node>
+<node id="2260">
+<data key="key0">white</data>
+</node>
+<node id="2261">
+<data key="key0">white</data>
+</node>
+<node id="2262">
+<data key="key0">white</data>
+</node>
+<node id="2263">
+<data key="key0">white</data>
+</node>
+<node id="2265">
+<data key="key0">white</data>
+</node>
+<node id="2266">
+<data key="key0">white</data>
+</node>
+<node id="2267">
+<data key="key0">white</data>
+</node>
+<node id="2268">
+<data key="key0">white</data>
+</node>
+<node id="2269">
+<data key="key0">white</data>
+</node>
+<node id="1501">
+<data key="key0">black</data>
+</node>
+<node id="2272">
+<data key="key0">white</data>
+</node>
+<node id="1512">
+<data key="key0">black</data>
+</node>
+<node id="2293">
+<data key="key0">white</data>
+</node>
+<node id="2300">
+<data key="key0">white</data>
+</node>
+<edge id="1" source="2309" target="2310">
+<data key="edge_weight_key">2.5</data>
+</edge>
+</graph>
+</graphml>
