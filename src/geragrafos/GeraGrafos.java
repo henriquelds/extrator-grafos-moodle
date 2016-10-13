@@ -15,6 +15,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -49,17 +50,26 @@ public class GeraGrafos {
         HashMap<Integer,CustomVertex> users = c.getUsersFromCourse(course);
         //printMap(users);
         
-        DirectedWeightedPseudograph<CustomVertex, DefaultWeightedEdge> graph = new DirectedWeightedPseudograph<CustomVertex, DefaultWeightedEdge>(DefaultWeightedEdge.class);
+        DirectedWeightedPseudograph<CustomVertex, CustomWeightedEdge> graph = new DirectedWeightedPseudograph<CustomVertex, CustomWeightedEdge>(CustomWeightedEdge.class);
         for(CustomVertex value : users.values()){
             graph.addVertex(value);
         }
-        graph.addEdge(users.get(2309), users.get(2310));
         
-        DefaultWeightedEdge e = graph.getEdge(users.get(2309), users.get(2310));
+        HashMap<String,CustomWeightedEdge> edges = c.getEdges(course, users);
+        //printCustomWeightedEdgeMap(edges);
+        for(CustomWeightedEdge e : edges.values()){
+            CustomVertex source = users.get(e.getSourceUserId());
+            CustomVertex target = users.get(e.getTargeUserId());
+            graph.addEdge(source, target, e);
+            CustomWeightedEdge ced = graph.getEdge(source, target);
+            graph.setEdgeWeight(ced, e.getPeso());
+        }
         
-        graph.setEdgeWeight(e, 3.5);
+        /*CustomWeightedEdge ced = new CustomWeightedEdge(2309, 2310,"PP");
+        graph.addEdge(users.get(2309), users.get(2310), ced);
+        graph.setEdgeWeight(ced, 9.5);
         
-        DefaultWeightedEdge e2 = graph.getEdge(users.get(2310), users.get(2309));
+        CustomWeightedEdge e2 = graph.getEdge(users.get(2310), users.get(2309));
         if(e2 != null){
             System.out.println(graph.getEdgeWeight(e2));
         }
@@ -67,12 +77,12 @@ public class GeraGrafos {
             System.out.println("nao existe essa aresta");
         }
         
+        */
         
-        //c.completeEdges(course,graph);
         
         FileWriter w;
         try {
-            GraphMLExporter<CustomVertex, DefaultWeightedEdge> exporter = createExporter(); 
+            GraphMLExporter<CustomVertex, CustomWeightedEdge> exporter = createExporter(); 
             w = new FileWriter("test.graphml");
             exporter.export(w, graph);
         } catch (IOException ex) {
@@ -84,7 +94,7 @@ public class GeraGrafos {
 
     
     
-    private static void printMap(HashMap<Integer,CustomVertex> map){
+    private static void printCustomVertexMap(HashMap<Integer,CustomVertex> map){
         for (Integer id: map.keySet()){
 
             String key =String.valueOf(id);
@@ -93,7 +103,15 @@ public class GeraGrafos {
         } 
     }
     
-    private static GraphMLExporter<CustomVertex, DefaultWeightedEdge> createExporter(){
+    private static void printCustomWeightedEdgeMap(HashMap<String,CustomWeightedEdge> map){
+        for (String id: map.keySet()){
+
+            String value = map.get(id).toString();  
+            System.out.println(id + " " + value);  
+        } 
+    }
+    
+    private static GraphMLExporter<CustomVertex, CustomWeightedEdge> createExporter(){
        
         VertexNameProvider<CustomVertex> vn = new VertexNameProvider<CustomVertex>(){
 
@@ -104,14 +122,17 @@ public class GeraGrafos {
            
        };
         
-        GraphMLExporter<CustomVertex, DefaultWeightedEdge> exporter = 
-               new GraphMLExporter<CustomVertex, DefaultWeightedEdge>(vn, null, new IntegerEdgeNameProvider<>(),null);
+        GraphMLExporter<CustomVertex, CustomWeightedEdge> exporter = 
+               new GraphMLExporter<CustomVertex, CustomWeightedEdge>(vn, null, new IntegerEdgeNameProvider<>(),null);
         
         exporter.setExportEdgeWeights(true);
         exporter.registerAttribute("type", AttributeCategory.NODE, AttributeType.STRING);
         exporter.registerAttribute("r", AttributeCategory.NODE, AttributeType.INT);
         exporter.registerAttribute("g", AttributeCategory.NODE, AttributeType.INT);
         exporter.registerAttribute("b", AttributeCategory.NODE, AttributeType.INT);
+        
+        exporter.registerAttribute("tipo_conexao", AttributeCategory.EDGE, AttributeType.STRING);
+        exporter.registerAttribute("color", AttributeCategory.EDGE, AttributeType.STRING);
         
         ComponentAttributeProvider<CustomVertex> vap = 
             new ComponentAttributeProvider<CustomVertex>(){
@@ -134,6 +155,32 @@ public class GeraGrafos {
                 }
             }; 
         exporter.setVertexAttributeProvider(vap);
+        
+        ComponentAttributeProvider<CustomWeightedEdge> eap =
+            new ComponentAttributeProvider<CustomWeightedEdge>()
+            {
+                @Override
+                public Map<String, String> getComponentAttributes(CustomWeightedEdge e)
+                {
+                    Map<String, String> m = new HashMap<String, String>();
+                    String t = e.getType();
+                    m.put("tipo_conexao",t );
+                    if(t.equalsIgnoreCase("AA")){  //conexao aluno-aluno
+                        m.put("color", "#008000");
+                    }
+                    else if(t.equalsIgnoreCase("PP")){ //conexao professor-professor
+                        m.put("color", "#0000FF");
+                    }
+                    else if(t.equalsIgnoreCase("PA")){ //conexao professor-aluno
+                        m.put("color", "#00FA9A");
+                    }
+                    else if(t.equalsIgnoreCase("AP")){                    //conexao aluno-professor
+                        m.put("color", "#00BFFF");
+                    }
+                    return m;
+                }
+            };
+        exporter.setEdgeAttributeProvider(eap);
         
         return exporter;
     }

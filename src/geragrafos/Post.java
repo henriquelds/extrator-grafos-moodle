@@ -10,12 +10,21 @@ package geragrafos;
  * @author Henrique
  */
 public class Post {
-    private int id,parent,userid;
+    private int id,parent,userid, wordCount;
 
-    public Post(int id, int parent, int userid) {
+    public Post(int id, int parent, int userid, int wordCount) {
         this.id = id;
         this.parent = parent;
         this.userid = userid;
+        this.wordCount = wordCount;
+    }
+
+    public int getWordCount() {
+        return wordCount;
+    }
+
+    public void setWordCount(int wordCount) {
+        this.wordCount = wordCount;
     }
     
     public int getId() {

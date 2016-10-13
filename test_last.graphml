@@ -6,6 +6,8 @@
 <key id="key1" for="node" attr.name="r" attr.type="int"/>
 <key id="key2" for="node" attr.name="g" attr.type="int"/>
 <key id="key3" for="node" attr.name="b" attr.type="int"/>
+<key id="key4" for="edge" attr.name="tipo_conexao" attr.type="string"/>
+<key id="key5" for="edge" attr.name="color" attr.type="string"/>
 <graph edgedefault="directed">
 <node id="2309">
 <data key="key0">professor</data>
@@ -1040,7 +1042,9 @@
 <data key="key3">0</data>
 </node>
 <edge id="1" source="2309" target="2310">
-<data key="edge_weight_key">3.5</data>
+<data key="edge_weight_key">9.5</data>
+<data key="key4">PP</data>
+<data key="key5">#0000FF</data>
 </edge>
 </graph>
 </graphml>

@@ -13,6 +13,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -85,11 +86,11 @@ public class Conector {
            id = rs.getInt(1);
            role = rs.getString(2);
            if(role.equalsIgnoreCase("student")){ //aluno é verde
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.GREEN);
+               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.GREEN, "aluno");
                map.put(id, cv);
            }
            else{      //prof é azul
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.BLUE);
+               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.BLUE, "professor");
                map.put(id, cv);
            }
         } 
@@ -98,10 +99,32 @@ public class Conector {
         return map;
     }
 
-    void completeEdges(int course, DirectedWeightedPseudograph<CustomVertex, DefaultWeightedEdge> graph) throws FileNotFoundException, SQLException {
+    public HashMap<String,CustomWeightedEdge> getEdges(int course, HashMap<Integer,CustomVertex> map) throws FileNotFoundException, SQLException {
         ArrayList<Post> posts = getPosts(course);
-        printArray(posts);
-        
+        HashMap<String,CustomWeightedEdge> edges = new HashMap<String,CustomWeightedEdge>();
+   
+        for(Post p : posts){
+            
+            if(p.getParent() == 0){
+                //do nothing           // é o primeiro post da discussao, nao gera aresta
+            }
+            else{
+                int sourceUserId = p.getUserid();
+                int targetUserId = getUserIdFromPost(p.getParent());
+                String concat = ""+sourceUserId+"-"+targetUserId;
+                if(edges.containsKey(concat)){
+                    CustomWeightedEdge ced = edges.get(concat);
+                    ced.setPeso(ced.getPeso()+p.getWordCount());
+                }
+                else{
+                    String tipo = CustomVertex.compara(map.get(sourceUserId), map.get(targetUserId));
+                    double peso = p.getWordCount();
+                    CustomWeightedEdge ced = new CustomWeightedEdge(sourceUserId,targetUserId,tipo,peso);
+                    edges.put(concat, ced);
+                }
+            }
+        }
+        return edges;
     
     }
     
@@ -146,7 +169,8 @@ public class Conector {
         ResultSet rs = st.executeQuery(query);
         while (rs.next())
         {
-            Post p = new Post(rs.getInt(1), rs.getInt(2), rs.getInt(3));
+            int wordCount = wordCounter(rs.getString(4));
+            Post p = new Post(rs.getInt(1), rs.getInt(2), rs.getInt(3), wordCount);
             array.add(p);
         }
         return array;
@@ -156,6 +180,34 @@ public class Conector {
         for(Object i : list){
             System.out.println(i);
         }
+    }
+
+    private int wordCounter(String string) {
+        String text = string;
+        text =  Normalizer.normalize(text, Normalizer.Form.NFD);
+        text = text.replaceAll("\\<.*?>","");
+        text = text.replaceAll("[^\\p{ASCII}]", "");
+        text = text.replaceAll("\\p{M}", "");
+        String trimmed = text.trim();
+        String[] aux = trimmed.replaceAll("[^a-zA-Z ]", " ").toLowerCase().split("\\s+");
+        //System.out.println(Arrays.toString(aux));
+        //int words = aux.isEmpty() ? 0 : trimmed.split("\\s+").length;
+        int words = aux.length;
+        return words;
+    }
+
+    private int getUserIdFromPost(int postId) throws FileNotFoundException, SQLException {
+        String query = new Scanner(new File(queriesPath+"usuarioDeUmPost.sql")).useDelimiter("\\Z").next();
+        query = query+"'"+postId+"';";
+        //query = query.substring(1);
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        int userId=0;
+        while (rs.next())
+        {
+            userId = rs.getInt(1);
+        }
+        return userId;
     }
     
 }

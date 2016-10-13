@@ -13,18 +13,19 @@ package geragrafos;
 
     public class CustomVertex
     {
-        private String id;
+        private String id, tipo;
         private Color color;
 
         public CustomVertex(String id)
         {
-            this(id, null);
+            this(id, null,null);
         }
 
-        public CustomVertex(String id, Color color)
+        public CustomVertex(String id, Color color, String tipo)
         {
             this.id = id;
             this.color = color;
+            this.tipo = tipo;
         }
 
         @Override
@@ -33,6 +34,14 @@ package geragrafos;
             return (id == null) ? 0 : id.hashCode();
         }
 
+        public String getTipo() {
+            return tipo;
+        }
+
+        public void setTipo(String tipo) {
+            this.tipo = tipo;
+        }
+        
         @Override
         public boolean equals(Object obj)
         {
@@ -80,5 +89,25 @@ package geragrafos;
             }
             sb.append(")");
             return sb.toString();
+        }
+        
+        public static String compara(CustomVertex v1, CustomVertex v2){
+            if(v1.getTipo().equalsIgnoreCase("aluno")){
+                if(v2.getTipo().equalsIgnoreCase("aluno")){
+                    return "AA";
+                }
+                else{
+                    return "AP";
+                }
+            }
+            else{
+                if(v2.getTipo().equalsIgnoreCase("aluno")){
+                    return "PA";
+                }
+                else{
+                    return "PP";
+                }
+            }
+            
         }
     }
