@@ -28,6 +28,7 @@ import org.jgrapht.ext.IntegerEdgeNameProvider;
 import org.jgrapht.ext.IntegerNameProvider;
 import org.jgrapht.ext.VertexNameProvider;
 import org.jgrapht.graph.DefaultWeightedEdge;
+import org.jgrapht.graph.DirectedWeightedPseudograph;
 import org.jgrapht.graph.WeightedPseudograph;
 import org.xml.sax.SAXException;
 
@@ -36,25 +37,38 @@ import org.xml.sax.SAXException;
  * @author Henrique
  */
 public class GeraGrafos {
-    private static String queriesPath = "queries\\";
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args)  throws IOException, SQLException, SAXException, TransformerConfigurationException {
         Conector c = new Conector("postgres", "1234", "clec");
-        Connection con = c.conecta();
+        c.conecta();
         
         int course = 38;
-        HashMap<Integer,CustomVertex> users = getUsersFromCourse(con, course);
+        HashMap<Integer,CustomVertex> users = c.getUsersFromCourse(course);
         //printMap(users);
         
-        WeightedPseudograph<CustomVertex, DefaultWeightedEdge> graph = new WeightedPseudograph<CustomVertex, DefaultWeightedEdge>(DefaultWeightedEdge.class);
+        DirectedWeightedPseudograph<CustomVertex, DefaultWeightedEdge> graph = new DirectedWeightedPseudograph<CustomVertex, DefaultWeightedEdge>(DefaultWeightedEdge.class);
         for(CustomVertex value : users.values()){
             graph.addVertex(value);
         }
         graph.addEdge(users.get(2309), users.get(2310));
+        
         DefaultWeightedEdge e = graph.getEdge(users.get(2309), users.get(2310));
-        graph.setEdgeWeight(e, 2.5);
+        
+        graph.setEdgeWeight(e, 3.5);
+        
+        DefaultWeightedEdge e2 = graph.getEdge(users.get(2310), users.get(2309));
+        if(e2 != null){
+            System.out.println(graph.getEdgeWeight(e2));
+        }
+        else{
+            System.out.println("nao existe essa aresta");
+        }
+        
+        
+        //c.completeEdges(course,graph);
         
         FileWriter w;
         try {
@@ -68,36 +82,7 @@ public class GeraGrafos {
         
     }
 
-    private static HashMap<Integer, CustomVertex> getUsersFromCourse(Connection con, int course) throws IOException, SQLException{
-        HashMap<Integer, CustomVertex> map = new HashMap<Integer, CustomVertex>();
-        
-        //String query = new String(Files.readAllBytes(Paths.get(queriesPath+"usuariosDeUmCurso.sql")));
-        String query = new Scanner(new File(queriesPath+"usuariosDeUmCurso.sql")).useDelimiter("\\Z").next();
-        query = query+"'"+course+"';";
-        query = query.substring(1);
-        //System.out.println("\n"+query);
-        Statement st = con.createStatement();
-        
-        int id;
-        String role;
-        ResultSet rs = st.executeQuery(query);
-        while (rs.next())
-        {
-           id = rs.getInt(1);
-           role = rs.getString(2);
-           if(role.equalsIgnoreCase("student")){ //aluno é verde
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.GREEN);
-               map.put(id, cv);
-           }
-           else{      //prof é azul
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.BLUE);
-               map.put(id, cv);
-           }
-        } 
-        rs.close();
-        st.close();
-        return map;
-    }
+    
     
     private static void printMap(HashMap<Integer,CustomVertex> map){
         for (Integer id: map.keySet()){
@@ -152,6 +137,7 @@ public class GeraGrafos {
         
         return exporter;
     }
+
     
     
 }
