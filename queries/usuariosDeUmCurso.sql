@@ -1,4 +1,4 @@
-﻿SELECT u.id, r.shortname FROM
+﻿SELECT u.id, r.shortname, u.username, u.email FROM
 mdl_user u
 JOIN mdl_role_assignments ra ON ra.userid = u.id
 JOIN mdl_role r ON ra.roleid = r.id

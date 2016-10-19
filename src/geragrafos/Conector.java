@@ -69,6 +69,20 @@ public class Conector {
 
 		}
     }
+    
+    public ArrayList<Curso> getCursos() throws FileNotFoundException, SQLException{
+        ArrayList<Curso> array = new ArrayList<Curso>();
+        String query = new Scanner(new File(queriesPath+"Cursos.sql")).useDelimiter("\\Z").next();
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        while (rs.next()){
+            Curso c = new Curso(rs.getInt(1),rs.getString(2), rs.getString(3));
+            array.add(c);
+        } 
+        rs.close();
+        st.close();
+        return array;
+    }
     public HashMap<Integer, CustomVertex> getUsersFromCourse(int course) throws IOException, SQLException{
         HashMap<Integer, CustomVertex> map = new HashMap<Integer, CustomVertex>();
         
@@ -79,18 +93,27 @@ public class Conector {
         Statement st = con.createStatement();
         
         int id;
-        String role;
+        String role,username,email;
         ResultSet rs = st.executeQuery(query);
         while (rs.next())
         {
            id = rs.getInt(1);
            role = rs.getString(2);
+           username = rs.getString(3);
+           if(username.contains("@")){
+                int lastIndex = username.lastIndexOf(".");
+                email = username.substring(lastIndex-1);
+                username = username.substring(lastIndex+1);
+           }
+           else{
+               email = rs.getString(4);
+           }
            if(role.equalsIgnoreCase("student")){ //aluno é verde
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.GREEN, "aluno");
+               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.GREEN, "aluno", username,email);
                map.put(id, cv);
            }
-           else{      //prof é azul
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.BLUE, "professor");
+           else{      //prof é azul e tem matricula default = 0
+               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.BLUE, "professor","0",email);
                map.put(id, cv);
            }
         } 
@@ -111,16 +134,21 @@ public class Conector {
             else{
                 int sourceUserId = p.getUserid();
                 int targetUserId = getUserIdFromPost(p.getParent());
+                //System.out.println("postId = "+p.getId()+ " - source= "+sourceUserId+" - target= "+targetUserId);
                 String concat = ""+sourceUserId+"-"+targetUserId;
                 if(edges.containsKey(concat)){
                     CustomWeightedEdge ced = edges.get(concat);
                     ced.setPeso(ced.getPeso()+p.getWordCount());
                 }
                 else{
-                    String tipo = CustomVertex.compara(map.get(sourceUserId), map.get(targetUserId));
-                    double peso = p.getWordCount();
-                    CustomWeightedEdge ced = new CustomWeightedEdge(sourceUserId,targetUserId,tipo,peso);
-                    edges.put(concat, ced);
+                    CustomVertex source = map.get(sourceUserId);
+                    CustomVertex target = map.get(targetUserId);
+                    if(source != null && target != null){
+                        String tipo = CustomVertex.compara(source,target);
+                        double peso = p.getWordCount();
+                        CustomWeightedEdge ced = new CustomWeightedEdge(sourceUserId,targetUserId,tipo,peso);
+                        edges.put(concat, ced);
+                    }
                 }
             }
         }
@@ -209,5 +237,56 @@ public class Conector {
         }
         return userId;
     }
+
+    public int getNum_assignFromCourse(int id) throws FileNotFoundException, SQLException {
+        String query = new Scanner(new File(queriesPath+"qtde_assignmentDeUmCurso.sql")).useDelimiter("\\Z").next();
+        query = query+"'"+id+"';";
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        int num=0;
+        while (rs.next())
+        {
+            num = rs.getInt(1);
+        }
+        return num;
+    }
+
+    public int getNum_chatsFromCourse(int id) throws FileNotFoundException, SQLException {
+        String query = new Scanner(new File(queriesPath+"qtde_chatsDeUmCurso.sql")).useDelimiter("\\Z").next();
+        query = query+"'"+id+"';";
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        int num=0;
+        while (rs.next())
+        {
+            num = rs.getInt(1);
+        }
+        return num;
+    }
+
+    public int getNum_forunsFromCourse(int id) throws FileNotFoundException, SQLException {
+        String query = new Scanner(new File(queriesPath+"qtde_forunsDeUmCurso.sql")).useDelimiter("\\Z").next();
+        query = query+"'"+id+"';";
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        int num=0;
+        while (rs.next())
+        {
+            num = rs.getInt(1);
+        }
+        return num;
+    }
+
+    public int getNum_resourcesFromCourse(int id) throws FileNotFoundException, SQLException {
+        String query = new Scanner(new File(queriesPath+"qtde_recursosDeUmCurso.sql")).useDelimiter("\\Z").next();
+        query = query+"'"+id+"';";
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        int num=0;
+        while (rs.next())
+        {
+            num = rs.getInt(1);
+        }
+        return num;}
     
 }

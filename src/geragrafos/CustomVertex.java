@@ -13,21 +13,39 @@ package geragrafos;
 
     public class CustomVertex
     {
-        private String id, tipo;
+        private String id, tipo,matricula,email;
         private Color color;
 
         public CustomVertex(String id)
         {
-            this(id, null,null);
+            this(id, null,null,null,null);
         }
 
-        public CustomVertex(String id, Color color, String tipo)
+        public CustomVertex(String id, Color color, String tipo, String matricula,String email)
         {
             this.id = id;
             this.color = color;
             this.tipo = tipo;
+            this.matricula = matricula;
+            this.email = email;
         }
 
+        public String getMatricula() {
+            return matricula;
+        }
+
+        public void setMatricula(String matricula) {
+            this.matricula = matricula;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+        
         @Override
         public int hashCode()
         {
@@ -87,7 +105,7 @@ package geragrafos;
             if (color != null) {
                 sb.append(",").append(color);
             }
-            sb.append(")");
+            sb.append(")").append("("+tipo+")").append("("+matricula+")").append("("+email+")");
             return sb.toString();
         }
         
