@@ -6,6 +6,7 @@
 package geragrafos;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -38,7 +39,7 @@ import org.xml.sax.SAXException;
  * @author Henrique
  */
 public class GeraGrafos {
-    
+    private static String dataPath = "data\\";
     /**
      * @param args the command line arguments
      */
@@ -46,49 +47,41 @@ public class GeraGrafos {
         Conector c = new Conector("postgres", "1234", "clec");
         c.conecta();
         
-        int course = 38;
-        HashMap<Integer,CustomVertex> users = c.getUsersFromCourse(course);
-        //printMap(users);
+        ArrayList<Curso> cursos = c.getCursos();
+        for(Curso curso : cursos){
+            int course = curso.getId();
+            System.out.println(course);
+            //getAndWriteCourseStatistics(curso,c);
+            HashMap<Integer,CustomVertex> users = c.getUsersFromCourse(course);
+            
+            //printCustomVertexMap(users);
+            
+            DirectedWeightedPseudograph<CustomVertex, CustomWeightedEdge> graph = new DirectedWeightedPseudograph<CustomVertex, CustomWeightedEdge>(CustomWeightedEdge.class);
+            for(CustomVertex value : users.values()){
+                graph.addVertex(value);
+            }
         
-        DirectedWeightedPseudograph<CustomVertex, CustomWeightedEdge> graph = new DirectedWeightedPseudograph<CustomVertex, CustomWeightedEdge>(CustomWeightedEdge.class);
-        for(CustomVertex value : users.values()){
-            graph.addVertex(value);
+            HashMap<String,CustomWeightedEdge> edges = c.getEdges(course, users);
+            //printCustomWeightedEdgeMap(edges);
+            for(CustomWeightedEdge e : edges.values()){
+                CustomVertex source = users.get(e.getSourceUserId());
+                CustomVertex target = users.get(e.getTargeUserId());
+                graph.addEdge(source, target, e);
+                CustomWeightedEdge ced = graph.getEdge(source, target);
+                graph.setEdgeWeight(ced, e.getPeso());
+            }
+        
+        
+        
+            FileWriter w;
+            try {
+                GraphMLExporter<CustomVertex, CustomWeightedEdge> exporter = createExporter(); 
+                w = new FileWriter(dataPath+"graphs\\graph_course_"+course+".graphml");
+                exporter.export(w, graph);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
-        
-        HashMap<String,CustomWeightedEdge> edges = c.getEdges(course, users);
-        //printCustomWeightedEdgeMap(edges);
-        for(CustomWeightedEdge e : edges.values()){
-            CustomVertex source = users.get(e.getSourceUserId());
-            CustomVertex target = users.get(e.getTargeUserId());
-            graph.addEdge(source, target, e);
-            CustomWeightedEdge ced = graph.getEdge(source, target);
-            graph.setEdgeWeight(ced, e.getPeso());
-        }
-        
-        /*CustomWeightedEdge ced = new CustomWeightedEdge(2309, 2310,"PP");
-        graph.addEdge(users.get(2309), users.get(2310), ced);
-        graph.setEdgeWeight(ced, 9.5);
-        
-        CustomWeightedEdge e2 = graph.getEdge(users.get(2310), users.get(2309));
-        if(e2 != null){
-            System.out.println(graph.getEdgeWeight(e2));
-        }
-        else{
-            System.out.println("nao existe essa aresta");
-        }
-        
-        */
-        
-        
-        FileWriter w;
-        try {
-            GraphMLExporter<CustomVertex, CustomWeightedEdge> exporter = createExporter(); 
-            w = new FileWriter("test.graphml");
-            exporter.export(w, graph);
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        
         
     }
 
@@ -127,6 +120,8 @@ public class GeraGrafos {
         
         exporter.setExportEdgeWeights(true);
         exporter.registerAttribute("type", AttributeCategory.NODE, AttributeType.STRING);
+        exporter.registerAttribute("matricula", AttributeCategory.NODE, AttributeType.STRING);
+        exporter.registerAttribute("email", AttributeCategory.NODE, AttributeType.STRING);
         exporter.registerAttribute("r", AttributeCategory.NODE, AttributeType.INT);
         exporter.registerAttribute("g", AttributeCategory.NODE, AttributeType.INT);
         exporter.registerAttribute("b", AttributeCategory.NODE, AttributeType.INT);
@@ -139,6 +134,8 @@ public class GeraGrafos {
                 @Override
                 public Map<String, String> getComponentAttributes(CustomVertex v) {
                     Map<String, String> m = new HashMap<String,String>();
+                    m.put("matricula", v.getMatricula());
+                    m.put("email", v.getEmail());
                     if(v.getColor().equals(Color.BLUE)){
                         m.put("type", "professor");
                         m.put("r", "0");
@@ -183,6 +180,16 @@ public class GeraGrafos {
         exporter.setEdgeAttributeProvider(eap);
         
         return exporter;
+    }
+
+    private static void getAndWriteCourseStatistics(Curso curso, Conector c) throws FileNotFoundException, SQLException, IOException {
+        curso.setNum_assign(c.getNum_assignFromCourse(curso.getId()));
+        curso.setNum_chats(c.getNum_chatsFromCourse(curso.getId()));
+        curso.setNum_foruns(c.getNum_forunsFromCourse(curso.getId()));
+        curso.setNum_resources(c.getNum_resourcesFromCourse(curso.getId()));
+        FileWriter fw = new FileWriter(dataPath+"info_course_"+curso.getId()+".txt");
+        fw.append(curso.toString());
+        fw.close();
     }
 
     
