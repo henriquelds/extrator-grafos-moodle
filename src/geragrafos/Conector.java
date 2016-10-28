@@ -71,13 +71,18 @@ public class Conector {
     }
     
     public ArrayList<Curso> getCursos() throws FileNotFoundException, SQLException{
+        List<Integer> wantedCourses = new ArrayList<Integer>(Arrays.asList(36,37,38,35,39,63,62,61,64,65));
         ArrayList<Curso> array = new ArrayList<Curso>();
         String query = new Scanner(new File(queriesPath+"Cursos.sql")).useDelimiter("\\Z").next();
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery(query);
+        int courseId = 0;
         while (rs.next()){
-            Curso c = new Curso(rs.getInt(1),rs.getString(2), rs.getString(3));
-            array.add(c);
+            courseId = rs.getInt(1);
+            if(wantedCourses.contains(courseId)){
+                Curso c = new Curso(courseId,rs.getString(2), rs.getString(3));
+                array.add(c);
+            }
         } 
         rs.close();
         st.close();
@@ -112,8 +117,12 @@ public class Conector {
                CustomVertex cv = new CustomVertex(String.valueOf(id),Color.GREEN, "aluno", username,email);
                map.put(id, cv);
            }
-           else{      //prof é azul e tem matricula default = 0
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.BLUE, "professor","0",email);
+           else if(role.equalsIgnoreCase("editingteacher")){      //prof é azul
+               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.BLUE, "professor",username,email);
+               map.put(id, cv);
+           }
+           else if(role.equalsIgnoreCase("teacher")){      //tutor é vermelho
+               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.RED, "tutor",username,email);
                map.put(id, cv);
            }
         } 
