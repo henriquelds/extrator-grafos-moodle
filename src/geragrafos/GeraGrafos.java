@@ -51,7 +51,7 @@ public class GeraGrafos {
         for(Curso curso : cursos){
             int course = curso.getId();
             System.out.println(course);
-            //getAndWriteCourseStatistics(curso,c);
+            getAndWriteCourseStatistics(curso,c);
             HashMap<Integer,CustomVertex> users = c.getUsersFromCourse(course);
             
             //printCustomVertexMap(users);
@@ -119,7 +119,7 @@ public class GeraGrafos {
                new GraphMLExporter<CustomVertex, CustomWeightedEdge>(vn, null, new IntegerEdgeNameProvider<>(),null);
         
         exporter.setExportEdgeWeights(true);
-        exporter.registerAttribute("type", AttributeCategory.NODE, AttributeType.STRING);
+        exporter.registerAttribute("tipo", AttributeCategory.NODE, AttributeType.STRING);
         exporter.registerAttribute("matricula", AttributeCategory.NODE, AttributeType.STRING);
         exporter.registerAttribute("email", AttributeCategory.NODE, AttributeType.STRING);
         exporter.registerAttribute("r", AttributeCategory.NODE, AttributeType.INT);
@@ -127,25 +127,31 @@ public class GeraGrafos {
         exporter.registerAttribute("b", AttributeCategory.NODE, AttributeType.INT);
         
         exporter.registerAttribute("tipo_conexao", AttributeCategory.EDGE, AttributeType.STRING);
-        exporter.registerAttribute("color", AttributeCategory.EDGE, AttributeType.STRING);
+        //exporter.registerAttribute("color", AttributeCategory.EDGE, AttributeType.STRING);
         
         ComponentAttributeProvider<CustomVertex> vap = 
             new ComponentAttributeProvider<CustomVertex>(){
                 @Override
                 public Map<String, String> getComponentAttributes(CustomVertex v) {
                     Map<String, String> m = new HashMap<String,String>();
-                    m.put("matricula", v.getMatricula());
+                    m.put("matricula", v.getUsername());
                     m.put("email", v.getEmail());
                     if(v.getColor().equals(Color.BLUE)){
-                        m.put("type", "professor");
+                        m.put("tipo", "professor");
                         m.put("r", "0");
                         m.put("g", "0");
                         m.put("b", "255");
                     }
                     else if(v.getColor().equals(Color.GREEN)){
-                        m.put("type", "aluno");
+                        m.put("tipo", "aluno");
                         m.put("r", "0");
                         m.put("g", "255");
+                        m.put("b", "0");
+                    }
+                    else if(v.getColor().equals(Color.RED)){
+                        m.put("tipo", "tutor");
+                        m.put("r", "255");
+                        m.put("g", "0");
                         m.put("b", "0");
                     }
                     return m;
@@ -162,7 +168,7 @@ public class GeraGrafos {
                     Map<String, String> m = new HashMap<String, String>();
                     String t = e.getType();
                     m.put("tipo_conexao",t );
-                    if(t.equalsIgnoreCase("AA")){  //conexao aluno-aluno
+                    /*if(t.equalsIgnoreCase("AA")){  //conexao aluno-aluno
                         m.put("color", "#008000");
                     }
                     else if(t.equalsIgnoreCase("PP")){ //conexao professor-professor
@@ -173,7 +179,7 @@ public class GeraGrafos {
                     }
                     else if(t.equalsIgnoreCase("AP")){                    //conexao aluno-professor
                         m.put("color", "#00BFFF");
-                    }
+                    }*/
                     return m;
                 }
             };
