@@ -13,7 +13,7 @@ package geragrafos;
 
     public class CustomVertex
     {
-        private String id, tipo,matricula,email;
+        private String id, tipo,username,email;
         private Color color;
 
         public CustomVertex(String id)
@@ -26,16 +26,16 @@ package geragrafos;
             this.id = id;
             this.color = color;
             this.tipo = tipo;
-            this.matricula = matricula;
+            this.username = matricula;
             this.email = email;
         }
 
-        public String getMatricula() {
-            return matricula;
+        public String getUsername() {
+            return username;
         }
 
-        public void setMatricula(String matricula) {
-            this.matricula = matricula;
+        public void setUsername(String username) {
+            this.username = username;
         }
 
         public String getEmail() {
@@ -105,7 +105,7 @@ package geragrafos;
             if (color != null) {
                 sb.append(",").append(color);
             }
-            sb.append(")").append("("+tipo+")").append("("+matricula+")").append("("+email+")");
+            sb.append(")").append("("+tipo+")").append("("+username+")").append("("+email+")");
             return sb.toString();
         }
         
@@ -114,18 +114,35 @@ package geragrafos;
                 if(v2.getTipo().equalsIgnoreCase("aluno")){
                     return "AA";
                 }
-                else{
+                else if(v2.getTipo().equalsIgnoreCase("professor")){
                     return "AP";
                 }
+                else if(v2.getTipo().equalsIgnoreCase("tutor")){
+                    return "AT";
+                }
             }
-            else{
+            else if(v1.getTipo().equalsIgnoreCase("professor")){
                 if(v2.getTipo().equalsIgnoreCase("aluno")){
                     return "PA";
                 }
-                else{
+                else if(v2.getTipo().equalsIgnoreCase("professor")){
                     return "PP";
                 }
+                else if(v2.getTipo().equalsIgnoreCase("tutor")){
+                    return "PT";
+                }
             }
-            
+            else if(v1.getTipo().equalsIgnoreCase("tutor")){
+                if(v2.getTipo().equalsIgnoreCase("aluno")){
+                    return "TA";
+                }
+                else if(v2.getTipo().equalsIgnoreCase("professor")){
+                    return "TP";
+                }
+                else if(v2.getTipo().equalsIgnoreCase("tutor")){
+                    return "TT";
+                }
+            }
+            return "UNDEFINED";
         }
     }

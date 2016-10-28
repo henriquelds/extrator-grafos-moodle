@@ -11,7 +11,8 @@ package geragrafos;
  */
 public enum Color {
         BLUE("blue"),
-        GREEN("green");
+        GREEN("green"),
+        RED("red");
 
         private final String value;
 
