@@ -1,0 +1,7 @@
+fullname=Processo Educativo I
+shortname=T3-131-PE I
+id=36
+num_assign=8
+num_foruns=7
+num_chats=8
+num_resources=14

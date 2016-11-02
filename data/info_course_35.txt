@@ -1,0 +1,7 @@
+fullname=Abordagens de Pesquisa em Educação I
+shortname=T3-131-APEI
+id=35
+num_assign=1
+num_foruns=6
+num_chats=0
+num_resources=23

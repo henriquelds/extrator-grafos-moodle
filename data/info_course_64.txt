@@ -1,0 +1,7 @@
+fullname=Abordagens de Pesquisa II
+shortname=T3-132-APII
+id=64
+num_assign=0
+num_foruns=3
+num_chats=0
+num_resources=3

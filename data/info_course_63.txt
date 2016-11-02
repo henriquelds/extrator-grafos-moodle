@@ -1,0 +1,7 @@
+fullname=Educação do Campo II
+shortname=T3-132-ECII
+id=63
+num_assign=0
+num_foruns=9
+num_chats=0
+num_resources=10

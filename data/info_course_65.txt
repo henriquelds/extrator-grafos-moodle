@@ -1,0 +1,7 @@
+fullname=Processos Educativos II
+shortname=T3-132-PEII
+id=65
+num_assign=0
+num_foruns=3
+num_chats=0
+num_resources=1

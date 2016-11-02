@@ -1,0 +1,7 @@
+fullname=Escola e Políticas Públicas II
+shortname=T3-132-EPPII
+id=62
+num_assign=0
+num_foruns=10
+num_chats=0
+num_resources=13

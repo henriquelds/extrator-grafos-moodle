@@ -1,0 +1,7 @@
+fullname=Educação do Campo I
+shortname=T3-131-EC I
+id=38
+num_assign=1
+num_foruns=8
+num_chats=0
+num_resources=20

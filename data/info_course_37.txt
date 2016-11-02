@@ -1,0 +1,7 @@
+fullname=Escola e Políticas Públicas I
+shortname=T3-131-EPP I
+id=37
+num_assign=3
+num_foruns=6
+num_chats=0
+num_resources=16

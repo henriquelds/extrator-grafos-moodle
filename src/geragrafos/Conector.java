@@ -19,6 +19,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.DirectedWeightedPseudograph;
 import org.jgrapht.graph.WeightedPseudograph;
@@ -30,12 +32,23 @@ import org.jgrapht.graph.WeightedPseudograph;
 public class Conector {
     private String user, pw, db;
     private static String queriesPath = "queries\\";
+    private ArrayList<Integer> professores;
+    private ArrayList<Integer> tutores;
     private Connection con;
     public Conector(String user, String pw, String db) {
         this.user = user;
         this.pw = pw;
         this.db = db;
-    }
+        this.conecta();
+        try {
+            this.professores = getAllProfessores();
+            this.tutores = new ArrayList<Integer>();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Conector.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(Conector.class.getName()).log(Level.SEVERE, null, ex);
+        }
+     }
     
     public void conecta(){
         try {
@@ -68,6 +81,7 @@ public class Conector {
 			//return null;
 
 		}
+                
     }
     
     public ArrayList<Curso> getCursos() throws FileNotFoundException, SQLException{
@@ -113,18 +127,22 @@ public class Conector {
            else{
                email = rs.getString(4);
            }
-           if(role.equalsIgnoreCase("student")){ //aluno é verde
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.GREEN, "aluno", username,email);
-               map.put(id, cv);
-           }
-           else if(role.equalsIgnoreCase("editingteacher")){      //prof é azul
+           
+           if(role.equalsIgnoreCase("editingteacher")){      //prof é azul
                CustomVertex cv = new CustomVertex(String.valueOf(id),Color.BLUE, "professor",username,email);
                map.put(id, cv);
            }
-           else if(role.equalsIgnoreCase("teacher")){      //tutor é vermelho
+           else if(role.equalsIgnoreCase("teacher") && !professores.contains(id)){      //tutor é vermelho
+               tutores.add(id);
                CustomVertex cv = new CustomVertex(String.valueOf(id),Color.RED, "tutor",username,email);
                map.put(id, cv);
            }
+           else if(role.equalsIgnoreCase("student") && !professores.contains(id) && !tutores.contains(id)){ //aluno é verde
+               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.GREEN, "aluno", username,email);
+               map.put(id, cv);
+           }
+           
+           
         } 
         rs.close();
         st.close();
@@ -297,5 +315,88 @@ public class Conector {
             num = rs.getInt(1);
         }
         return num;}
+
+    private ArrayList<Integer> getAllProfessores() throws FileNotFoundException, SQLException {
+        ArrayList<Integer> array = new ArrayList<Integer>();
+        String query = new Scanner(new File(queriesPath+"professoresAllCursos.sql")).useDelimiter("\\Z").next();
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        int profId = 0;
+        while (rs.next()){
+            profId = rs.getInt(1);
+            array.add(profId);
+            
+        } 
+        rs.close();
+        st.close();
+        return array;
+    }
+
+    /*private ArrayList<Integer> getAllTutores() throws FileNotFoundException, SQLException {
+        ArrayList<Integer> array = new ArrayList<Integer>();
+        String query = new Scanner(new File(queriesPath+"tutoresAllCursos.sql")).useDelimiter("\\Z").next();
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        int tutorId = 0;
+        while (rs.next()){
+            tutorId = rs.getInt(1);
+            array.add(tutorId);
+            
+        } 
+        rs.close();
+        st.close();
+        return array;
+    }*/
     
+    public ArrayList<Aluno> getAlunosDeUmCurso(int course) throws FileNotFoundException, SQLException {
+        ArrayList<Aluno> array = new ArrayList<Aluno>();
+        String query = new Scanner(new File(queriesPath+"alunosDeUmCurso.sql")).useDelimiter("\\Z").next();
+        Statement st = con.createStatement();
+        query = query+"'"+course+"' ORDER BY p.userid;";
+        //System.out.println(query);
+        ResultSet rs = st.executeQuery(query);
+        int id = 0;
+        String firstname, lastname;
+        while (rs.next()){
+            id = rs.getInt(1);
+            firstname = rs.getString(2);
+            lastname = rs.getString(3);
+            //System.out.println(firstname+" "+lastname);
+            if(!professores.contains(id) && !tutores.contains(id)){
+                //System.out.print(" é aluno\n");
+                Aluno a = new Aluno(id, firstname, lastname);
+                array.add(a);
+            }
+        } 
+        rs.close();
+        st.close();
+        //System.out.println("qtalunos = "+array.size());
+        return array;
+    }
+
+    ArrayList<Aluno> getAlunosDeUmCursoIndPost(int course) throws FileNotFoundException, SQLException {
+     ArrayList<Aluno> array = new ArrayList<Aluno>();
+        String query = new Scanner(new File(queriesPath+"alunosDeUmCursoIndPost.sql")).useDelimiter("\\Z").next();
+        Statement st = con.createStatement();
+        query = query+"'"+course+"' ORDER BY u.firstname;";
+        //System.out.println(query);
+        ResultSet rs = st.executeQuery(query);
+        int id = 0;
+        String firstname, lastname;
+        while (rs.next()){
+            id = rs.getInt(1);
+            firstname = rs.getString(2);
+            lastname = rs.getString(3);
+            //System.out.println(firstname+" "+lastname);
+            if(!professores.contains(id) && !tutores.contains(id)){
+                //System.out.print(" é aluno\n");
+                Aluno a = new Aluno(id, firstname, lastname);
+                array.add(a);
+            }
+        } 
+        rs.close();
+        st.close();
+        //System.out.println("qtalunos = "+array.size());
+        return array;
+    }
 }

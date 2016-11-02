@@ -1,0 +1,7 @@
+fullname=Educação a Distância II
+shortname=T3-132-EDII
+id=61
+num_assign=1
+num_foruns=16
+num_chats=0
+num_resources=0

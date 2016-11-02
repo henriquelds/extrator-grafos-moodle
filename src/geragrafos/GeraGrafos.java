@@ -45,7 +45,7 @@ public class GeraGrafos {
      */
     public static void main(String[] args)  throws IOException, SQLException, SAXException, TransformerConfigurationException {
         Conector c = new Conector("postgres", "1234", "clec");
-        c.conecta();
+        //c.conecta();
         
         ArrayList<Curso> cursos = c.getCursos();
         for(Curso curso : cursos){
@@ -76,7 +76,7 @@ public class GeraGrafos {
             FileWriter w;
             try {
                 GraphMLExporter<CustomVertex, CustomWeightedEdge> exporter = createExporter(); 
-                w = new FileWriter(dataPath+"graphs\\graph_course_"+course+".graphml");
+                w = new FileWriter(dataPath+"graph_course_"+course+".graphml");
                 exporter.export(w, graph);
             } catch (IOException ex) {
                 ex.printStackTrace();
