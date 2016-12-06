@@ -102,7 +102,7 @@ public class Conector {
         st.close();
         return array;
     }
-    public HashMap<Integer, CustomVertex> getUsersFromCourse(int course) throws IOException, SQLException{
+    public HashMap<Integer, CustomVertex> getUsersFromCourse(int course, HashMap<Integer,String> sits) throws IOException, SQLException{
         HashMap<Integer, CustomVertex> map = new HashMap<Integer, CustomVertex>();
         
         //String query = new String(Files.readAllBytes(Paths.get(queriesPath+"usuariosDeUmCurso.sql")));
@@ -129,16 +129,20 @@ public class Conector {
            }
            
            if(role.equalsIgnoreCase("editingteacher")){      //prof é azul
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.BLUE, "professor",username,email);
+               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.BLUE, "professor",username,email,"IND");
                map.put(id, cv);
            }
            else if(role.equalsIgnoreCase("teacher") && !professores.contains(id)){      //tutor é vermelho
                tutores.add(id);
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.RED, "tutor",username,email);
+               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.RED, "tutor",username,email,"IND");      //profs e tutores tem situaçao indefinida de aprovaçao reprovaçao
                map.put(id, cv);
            }
            else if(role.equalsIgnoreCase("student") && !professores.contains(id) && !tutores.contains(id)){ //aluno é verde
-               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.GREEN, "aluno", username,email);
+               String sit = sits.get(id);
+               if(sit == null){
+                   sit = "IND";
+               }
+               CustomVertex cv = new CustomVertex(String.valueOf(id),Color.GREEN, "aluno", username,email,sit);
                map.put(id, cv);
            }
            
@@ -149,12 +153,12 @@ public class Conector {
         return map;
     }
 
-    public HashMap<String,CustomWeightedEdge> getEdges(int course, HashMap<Integer,CustomVertex> map) throws FileNotFoundException, SQLException {
-        ArrayList<Post> posts = getPosts(course);
+    public HashMap<String,CustomWeightedEdge> getEdges(int course, HashMap<Integer,CustomVertex> map, long inicio, long fim) throws FileNotFoundException, SQLException {
+        ArrayList<Post> posts = getPosts(course, inicio, fim);
         HashMap<String,CustomWeightedEdge> edges = new HashMap<String,CustomWeightedEdge>();
-   
+        //System.out.println("qt posts "+posts.size());
         for(Post p : posts){
-            
+           
             if(p.getParent() == 0){
                 //do nothing           // é o primeiro post da discussao, nao gera aresta
             }
@@ -214,13 +218,14 @@ public class Conector {
         return array;
     }
     
-    ArrayList<Post> getPosts(int course) throws FileNotFoundException, SQLException{
+    ArrayList<Post> getPosts(int course, long inicio, long fim) throws FileNotFoundException, SQLException{
         ArrayList<Post> array = new ArrayList<Post>();
         
         String query = new Scanner(new File(queriesPath+"postsDeUmCurso.sql")).useDelimiter("\\Z").next();
-        query = query+"'"+course+"';";
+        query = query+"'"+course+"' AND (p.created >='"+inicio+"' AND p.created <'"+fim+"');";
         //query = query.substring(1);
         Statement st = con.createStatement();
+        //System.out.println(query);
         ResultSet rs = st.executeQuery(query);
         while (rs.next())
         {

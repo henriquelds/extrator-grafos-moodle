@@ -17,6 +17,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -46,13 +47,16 @@ public class GeraGrafos {
     public static void main(String[] args)  throws IOException, SQLException, SAXException, TransformerConfigurationException {
         Conector c = new Conector("postgres", "1234", "clec");
         //c.conecta();
-        
-        ArrayList<Curso> cursos = c.getCursos();
-        for(Curso curso : cursos){
-            int course = curso.getId();
+        int course = 65; //curso.getId();
+        long inicio = 1383150368;
+        long fim;
+        //ArrayList<Curso> cursos = c.getCursos();
+        for(int week=1;week <= 7;week++){
+            fim = inicio + 691199;
             System.out.println(course);
-            getAndWriteCourseStatistics(curso,c);
-            HashMap<Integer,CustomVertex> users = c.getUsersFromCourse(course);
+            //getAndWriteCourseStatistics(curso,c);
+            HashMap<Integer,String> sits = getSituations(course);
+            HashMap<Integer,CustomVertex> users = c.getUsersFromCourse(course,sits);
             
             //printCustomVertexMap(users);
             
@@ -60,8 +64,11 @@ public class GeraGrafos {
             for(CustomVertex value : users.values()){
                 graph.addVertex(value);
             }
-        
-            HashMap<String,CustomWeightedEdge> edges = c.getEdges(course, users);
+            Date i = new Date(inicio*1000);
+            Date f = new Date(fim*1000);
+            System.out.println("week = "+week+"\n"+i+"\n"+f);
+            HashMap<String,CustomWeightedEdge> edges = c.getEdges(course, users, inicio,fim);
+            inicio = fim;
             //printCustomWeightedEdgeMap(edges);
             for(CustomWeightedEdge e : edges.values()){
                 CustomVertex source = users.get(e.getSourceUserId());
@@ -76,7 +83,7 @@ public class GeraGrafos {
             FileWriter w;
             try {
                 GraphMLExporter<CustomVertex, CustomWeightedEdge> exporter = createExporter(); 
-                w = new FileWriter(dataPath+"graph_course_"+course+".graphml");
+                w = new FileWriter(dataPath+"graph_course_"+course+"_w"+week+".graphml");
                 exporter.export(w, graph);
             } catch (IOException ex) {
                 ex.printStackTrace();
@@ -121,6 +128,7 @@ public class GeraGrafos {
         exporter.setExportEdgeWeights(true);
         exporter.registerAttribute("tipo", AttributeCategory.NODE, AttributeType.STRING);
         exporter.registerAttribute("matricula", AttributeCategory.NODE, AttributeType.STRING);
+        exporter.registerAttribute("situacao", AttributeCategory.NODE, AttributeType.STRING);
         exporter.registerAttribute("email", AttributeCategory.NODE, AttributeType.STRING);
         exporter.registerAttribute("r", AttributeCategory.NODE, AttributeType.INT);
         exporter.registerAttribute("g", AttributeCategory.NODE, AttributeType.INT);
@@ -136,6 +144,7 @@ public class GeraGrafos {
                     Map<String, String> m = new HashMap<String,String>();
                     m.put("matricula", v.getUsername());
                     m.put("email", v.getEmail());
+                    m.put("situacao", v.getSit());
                     if(v.getColor().equals(Color.BLUE)){
                         m.put("tipo", "professor");
                         m.put("r", "0");
@@ -196,6 +205,20 @@ public class GeraGrafos {
         FileWriter fw = new FileWriter(dataPath+"info_course_"+curso.getId()+".txt");
         fw.append(curso.toString());
         fw.close();
+    }
+
+    private static HashMap<Integer, String> getSituations(int course) throws FileNotFoundException {
+        Scanner sc = new Scanner(new File(dataPath+"situation_course_"+course+".csv"));
+        HashMap<Integer,String> m = new HashMap<Integer,String>();
+        sc.nextLine();
+        while(sc.hasNextLine()){
+            String[] line = sc.nextLine().split(",");
+            int id = Integer.parseInt(line[0]);
+            String sit = line[2].replaceAll("\"", "");
+            //System.out.println(id+" "+sit);
+            m.put(id, sit);
+        }
+        return m;
     }
 
     

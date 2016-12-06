@@ -13,23 +13,33 @@ package geragrafos;
 
     public class CustomVertex
     {
-        private String id, tipo,username,email;
+        private String id, tipo,username,email,sit;
         private Color color;
 
         public CustomVertex(String id)
         {
-            this(id, null,null,null,null);
+            this(id, null,null,null,null,null);
         }
 
-        public CustomVertex(String id, Color color, String tipo, String matricula,String email)
+        public CustomVertex(String id, Color color, String tipo, String matricula,String email,String sit)
         {
             this.id = id;
             this.color = color;
             this.tipo = tipo;
             this.username = matricula;
             this.email = email;
+            this.sit = sit;
         }
 
+        public String getSit() {
+            return sit;
+        }
+
+        public void setSit(String sit) {
+            this.sit = sit;
+        }
+
+        
         public String getUsername() {
             return username;
         }
