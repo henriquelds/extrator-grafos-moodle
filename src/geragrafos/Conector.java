@@ -17,8 +17,10 @@ import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
+import java.util.TreeSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.jgrapht.graph.DefaultWeightedEdge;
@@ -403,5 +405,35 @@ public class Conector {
         st.close();
         //System.out.println("qtalunos = "+array.size());
         return array;
+    }
+
+    public void completaUsuarios(int id_curso, TreeSet<Integer> professores, TreeSet<Integer> tutores) throws FileNotFoundException, SQLException {
+        String query = new Scanner(new File(queriesPath+"usuariosDeUmCurso.sql")).useDelimiter("\\Z").next();
+        query = query+"'"+id_curso+"';";
+        query = query.substring(1);
+        Statement st = con.createStatement();
+        
+        int id;
+        String role,username,email;
+        ResultSet rs = st.executeQuery(query);
+        while (rs.next())
+        {
+           id = rs.getInt(1);
+           role = rs.getString(2);
+           
+           
+           if(role.equalsIgnoreCase("editingteacher")){      //prof é azul
+               professores.add(id);
+           }
+           else if(role.equalsIgnoreCase("teacher") && !professores.contains(id)){      //tutor é vermelho
+               tutores.add(id);
+           }
+           /*else if(role.equalsIgnoreCase("student") && !professores.contains(id) && !tutores.contains(id)){ //aluno é verde
+               alunos.add(id);
+               
+           }*/
+           
+           
+        }     
     }
 }
