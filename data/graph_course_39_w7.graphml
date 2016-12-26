@@ -1577,5 +1577,41 @@
 <data key="key5">0</data>
 <data key="key6">255</data>
 </node>
+<edge id="1" source="2207" target="2207">
+<data key="edge_weight_key">37.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="2" source="1984" target="2228">
+<data key="edge_weight_key">34.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="3" source="2136" target="1502">
+<data key="edge_weight_key">23.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="4" source="2250" target="1985">
+<data key="edge_weight_key">14.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="5" source="2191" target="1990">
+<data key="edge_weight_key">2.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="6" source="2150" target="1993">
+<data key="edge_weight_key">57.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="7" source="2191" target="1981">
+<data key="edge_weight_key">2.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="8" source="2241" target="1984">
+<data key="edge_weight_key">7.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="9" source="2150" target="1981">
+<data key="edge_weight_key">38.0</data>
+<data key="key7">AP</data>
+</edge>
 </graph>
 </graphml>

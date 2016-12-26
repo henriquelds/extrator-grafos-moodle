@@ -1,0 +1,2299 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<key id="edge_weight_key" for="edge" attr.name="weight" attr.type="double">
+<default>1.0</default>
+</key>
+<key id="key0" for="node" attr.name="tipo" attr.type="string"/>
+<key id="key1" for="node" attr.name="matricula" attr.type="string"/>
+<key id="key2" for="node" attr.name="situacao" attr.type="string"/>
+<key id="key3" for="node" attr.name="email" attr.type="string"/>
+<key id="key4" for="node" attr.name="r" attr.type="int"/>
+<key id="key5" for="node" attr.name="g" attr.type="int"/>
+<key id="key6" for="node" attr.name="b" attr.type="int"/>
+<key id="key7" for="edge" attr.name="tipo_conexao" attr.type="string"/>
+<graph edgedefault="directed">
+<node id="2313">
+<data key="key0">tutor</data>
+<data key="key1">02353634052</data>
+<data key="key2">IND</data>
+<data key="key3">stefanitp.clecsjn@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2319">
+<data key="key0">professor</data>
+<data key="key1">72058951034</data>
+<data key="key2">IND</data>
+<data key="key3">rogeriagarciaeduc@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">0</data>
+<data key="key6">255</data>
+</node>
+<node id="2320">
+<data key="key0">professor</data>
+<data key="key1">97389722053</data>
+<data key="key2">IND</data>
+<data key="key3">magdageo8@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">0</data>
+<data key="key6">255</data>
+</node>
+<node id="2130">
+<data key="key0">aluno</data>
+<data key="key1">22640479091</data>
+<data key="key2">APR</data>
+<data key="key3">aopjasmim@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2131">
+<data key="key0">aluno</data>
+<data key="key1">70704120020</data>
+<data key="key2">APR</data>
+<data key="key3">alessandropires437@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2132">
+<data key="key0">aluno</data>
+<data key="key1">28707184034</data>
+<data key="key2">REP</data>
+<data key="key3">bebe582011@hotmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2133">
+<data key="key0">aluno</data>
+<data key="key1">43203477068</data>
+<data key="key2">APR</data>
+<data key="key3">iaranunespereira187@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2134">
+<data key="key0">aluno</data>
+<data key="key1">30232880034</data>
+<data key="key2">APR</data>
+<data key="key3">jorginhoimoveis59@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2135">
+<data key="key0">aluno</data>
+<data key="key1">62733931091</data>
+<data key="key2">IND</data>
+<data key="key3">liliareseda@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2136">
+<data key="key0">aluno</data>
+<data key="key1">54206820015</data>
+<data key="key2">APR</data>
+<data key="key3">magdataborda68@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2137">
+<data key="key0">aluno</data>
+<data key="key1">98075888049</data>
+<data key="key2">IND</data>
+<data key="key3">mrrgoncalves1976@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2138">
+<data key="key0">aluno</data>
+<data key="key1">01143233050</data>
+<data key="key2">APR</data>
+<data key="key3">mapr3793@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2139">
+<data key="key0">aluno</data>
+<data key="key1">43197825004</data>
+<data key="key2">IND</data>
+<data key="key3">marilukercher@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2140">
+<data key="key0">aluno</data>
+<data key="key1">70706123034</data>
+<data key="key2">APR</data>
+<data key="key3">marinesandrade1971@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2141">
+<data key="key0">aluno</data>
+<data key="key1">29122694072</data>
+<data key="key2">APR</data>
+<data key="key3">robertovieiraortizumbi1960@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2142">
+<data key="key0">aluno</data>
+<data key="key1">01463847092</data>
+<data key="key2">APR</data>
+<data key="key3">sandrianibraga@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2143">
+<data key="key0">aluno</data>
+<data key="key1">01790797004</data>
+<data key="key2">APR</data>
+<data key="key3">suzanexavier1@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2144">
+<data key="key0">aluno</data>
+<data key="key1">83267417015</data>
+<data key="key2">APR</data>
+<data key="key3">veronicetavares@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2145">
+<data key="key0">aluno</data>
+<data key="key1">01779269021</data>
+<data key="key2">IND</data>
+<data key="key3">kerchervinicius@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1889">
+<data key="key0">tutor</data>
+<data key="key1">95175970020</data>
+<data key="key2">IND</data>
+<data key="key3">alineduca@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2146">
+<data key="key0">aluno</data>
+<data key="key1">01060862000</data>
+<data key="key2">APR</data>
+<data key="key3">ale.ferrandis@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2147">
+<data key="key0">aluno</data>
+<data key="key1">01875038000</data>
+<data key="key2">APR</data>
+<data key="key3">martinsspaula6@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2148">
+<data key="key0">aluno</data>
+<data key="key1">82164410025</data>
+<data key="key2">APR</data>
+<data key="key3">decagomess@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2149">
+<data key="key0">aluno</data>
+<data key="key1">00041242009</data>
+<data key="key2">APR</data>
+<data key="key3">carendocouto2009@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2150">
+<data key="key0">aluno</data>
+<data key="key1">91450950000</data>
+<data key="key2">APR</data>
+<data key="key3">kakkauucdsp@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2151">
+<data key="key0">aluno</data>
+<data key="key1">71120823072</data>
+<data key="key2">REP</data>
+<data key="key3">claudiahelenagt@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2152">
+<data key="key0">aluno</data>
+<data key="key1">65727304091</data>
+<data key="key2">IND</data>
+<data key="key3">claudiardiehl@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2153">
+<data key="key0">aluno</data>
+<data key="key1">95752021049</data>
+<data key="key2">APR</data>
+<data key="key3">clebiapmaia@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2154">
+<data key="key0">aluno</data>
+<data key="key1">01802464026</data>
+<data key="key2">APR</data>
+<data key="key3">cris.dani.oliveira1@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2155">
+<data key="key0">aluno</data>
+<data key="key1">80510914004</data>
+<data key="key2">IND</data>
+<data key="key3">edenilsoncoelhopinto@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2156">
+<data key="key0">aluno</data>
+<data key="key1">54228190049</data>
+<data key="key2">APR</data>
+<data key="key3">elderschutz@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2157">
+<data key="key0">aluno</data>
+<data key="key1">81939604087</data>
+<data key="key2">APR</data>
+<data key="key3">elistrindade13@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1389">
+<data key="key0">aluno</data>
+<data key="key1">95826971053</data>
+<data key="key2">IND</data>
+<data key="key3">lailagondran@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2158">
+<data key="key0">aluno</data>
+<data key="key1">00079681085</data>
+<data key="key2">APR</data>
+<data key="key3">elisduarte7@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2159">
+<data key="key0">aluno</data>
+<data key="key1">57951551015</data>
+<data key="key2">REP</data>
+<data key="key3">remedi.oliveira1@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2160">
+<data key="key0">aluno</data>
+<data key="key1">81602138087</data>
+<data key="key2">APR</data>
+<data key="key3">nandapacielo@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2161">
+<data key="key0">aluno</data>
+<data key="key1">00074232096</data>
+<data key="key2">APR</data>
+<data key="key3">glerinhasilva@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2162">
+<data key="key0">aluno</data>
+<data key="key1">82352402034</data>
+<data key="key2">APR</data>
+<data key="key3">irenevieira2013@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2163">
+<data key="key0">aluno</data>
+<data key="key1">02940599033</data>
+<data key="key2">APR</data>
+<data key="key3">jannainamarques2012@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2164">
+<data key="key0">aluno</data>
+<data key="key1">00174118074</data>
+<data key="key2">APR</data>
+<data key="key3">kelenfurtadoo@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2165">
+<data key="key0">aluno</data>
+<data key="key1">69665664034</data>
+<data key="key2">APR</data>
+<data key="key3">severoliliane@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2166">
+<data key="key0">aluno</data>
+<data key="key1">01380661080</data>
+<data key="key2">APR</data>
+<data key="key3">lucianer781@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2167">
+<data key="key0">aluno</data>
+<data key="key1">93406770053</data>
+<data key="key2">APR</data>
+<data key="key3">lutaina39@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2168">
+<data key="key0">aluno</data>
+<data key="key1">64018946015</data>
+<data key="key2">APR</data>
+<data key="key3">galsaldivia@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2169">
+<data key="key0">aluno</data>
+<data key="key1">91678170097</data>
+<data key="key2">APR</data>
+<data key="key3">mocanacoelho@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2170">
+<data key="key0">aluno</data>
+<data key="key1">00532671090</data>
+<data key="key2">REP</data>
+<data key="key3">tecnicomarcelolvrs@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2171">
+<data key="key0">aluno</data>
+<data key="key1">64651169015</data>
+<data key="key2">APR</data>
+<data key="key3">marciasimonebenites@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2172">
+<data key="key0">aluno</data>
+<data key="key1">01186001097</data>
+<data key="key2">APR</data>
+<data key="key3">marciourbano86@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2173">
+<data key="key0">aluno</data>
+<data key="key1">73397636000</data>
+<data key="key2">APR</data>
+<data key="key3">alicefernandescavalheiro@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2174">
+<data key="key0">aluno</data>
+<data key="key1">60448237091</data>
+<data key="key2">APR</data>
+<data key="key3">mariadocarmodfagundes@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2175">
+<data key="key0">aluno</data>
+<data key="key1">63950286004</data>
+<data key="key2">IND</data>
+<data key="key3">maraelainegomes@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2176">
+<data key="key0">aluno</data>
+<data key="key1">64020380082</data>
+<data key="key2">REP</data>
+<data key="key3">mariapaulinaperes@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2177">
+<data key="key0">aluno</data>
+<data key="key1">91250595053</data>
+<data key="key2">IND</data>
+<data key="key3">marleimachado26@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2178">
+<data key="key0">aluno</data>
+<data key="key1">65706900000</data>
+<data key="key2">APR</data>
+<data key="key3">mauren.nunes@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2179">
+<data key="key0">aluno</data>
+<data key="key1">33382085020</data>
+<data key="key2">APR</data>
+<data key="key3">mirtavieir@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2180">
+<data key="key0">aluno</data>
+<data key="key1">94461414000</data>
+<data key="key2">APR</data>
+<data key="key3">nelizabethmendez@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2181">
+<data key="key0">aluno</data>
+<data key="key1">02618790065</data>
+<data key="key2">APR</data>
+<data key="key3">oraceliasilveira@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2182">
+<data key="key0">aluno</data>
+<data key="key1">65706323020</data>
+<data key="key2">APR</data>
+<data key="key3">queniaseveromaciel15@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2183">
+<data key="key0">aluno</data>
+<data key="key1">01756722021</data>
+<data key="key2">APR</data>
+<data key="key3">ronaracavalheiro@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2184">
+<data key="key0">aluno</data>
+<data key="key1">64020282072</data>
+<data key="key2">IND</data>
+<data key="key3">rosirodutra@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2185">
+<data key="key0">aluno</data>
+<data key="key1">74865250034</data>
+<data key="key2">APR</data>
+<data key="key3">arandasandra950@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2186">
+<data key="key0">aluno</data>
+<data key="key1">65724747049</data>
+<data key="key2">APR</data>
+<data key="key3">sergiobastosrodrigues@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2187">
+<data key="key0">aluno</data>
+<data key="key1">42674352000</data>
+<data key="key2">REP</data>
+<data key="key3">shirleydias60@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1931">
+<data key="key0">tutor</data>
+<data key="key1">37476670078</data>
+<data key="key2">IND</data>
+<data key="key3">silviahaussen@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2188">
+<data key="key0">aluno</data>
+<data key="key1">00638874017</data>
+<data key="key2">APR</data>
+<data key="key3">silviabentin09@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2189">
+<data key="key0">aluno</data>
+<data key="key1">53425057049</data>
+<data key="key2">APR</data>
+<data key="key3">silviasantos724@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2190">
+<data key="key0">aluno</data>
+<data key="key1">70927901072</data>
+<data key="key2">APR</data>
+<data key="key3">simonemadril44@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2191">
+<data key="key0">aluno</data>
+<data key="key1">00932447031</data>
+<data key="key2">APR</data>
+<data key="key3">walosimed@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2192">
+<data key="key0">aluno</data>
+<data key="key1">02244409007</data>
+<data key="key2">REP</data>
+<data key="key3">alessandra.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2193">
+<data key="key0">aluno</data>
+<data key="key1">00934477019</data>
+<data key="key2">APR</data>
+<data key="key3">alice.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2194">
+<data key="key0">aluno</data>
+<data key="key1">03309399044</data>
+<data key="key2">APR</data>
+<data key="key3">alicianefarias.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2195">
+<data key="key0">aluno</data>
+<data key="key1">02023529000</data>
+<data key="key2">IND</data>
+<data key="key3">carla.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1940">
+<data key="key0">professor</data>
+<data key="key1">97050091049</data>
+<data key="key2">IND</data>
+<data key="key3">monia@vetorial.net</data>
+<data key="key4">0</data>
+<data key="key5">0</data>
+<data key="key6">255</data>
+</node>
+<node id="2196">
+<data key="key0">aluno</data>
+<data key="key1">01041055005</data>
+<data key="key2">APR</data>
+<data key="key3">catiane.clec@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2197">
+<data key="key0">aluno</data>
+<data key="key1">61604259000</data>
+<data key="key2">APR</data>
+<data key="key3">cristiane.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2198">
+<data key="key0">aluno</data>
+<data key="key1">67972870063</data>
+<data key="key2">IND</data>
+<data key="key3">darciangela.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2199">
+<data key="key0">aluno</data>
+<data key="key1">01198093030</data>
+<data key="key2">IND</data>
+<data key="key3">edilainesjn@hotmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2200">
+<data key="key0">aluno</data>
+<data key="key1">90161688004</data>
+<data key="key2">REP</data>
+<data key="key3">nanaionara.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1945">
+<data key="key0">tutor</data>
+<data key="key1">12453773020</data>
+<data key="key2">IND</data>
+<data key="key3">jofs19@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2201">
+<data key="key0">aluno</data>
+<data key="key1">01407519042</data>
+<data key="key2">REP</data>
+<data key="key3">fernanda.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2202">
+<data key="key0">aluno</data>
+<data key="key1">63845806087</data>
+<data key="key2">APR</data>
+<data key="key3">flaviasilva.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2203">
+<data key="key0">aluno</data>
+<data key="key1">01122067003</data>
+<data key="key2">APR</data>
+<data key="key3">helenice.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2204">
+<data key="key0">aluno</data>
+<data key="key1">02551035066</data>
+<data key="key2">REP</data>
+<data key="key3">idianara.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2205">
+<data key="key0">aluno</data>
+<data key="key1">99362058049</data>
+<data key="key2">REP</data>
+<data key="key3">ionara.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2206">
+<data key="key0">aluno</data>
+<data key="key1">90084837004</data>
+<data key="key2">IND</data>
+<data key="key3">ivone.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1951">
+<data key="key0">professor</data>
+<data key="key1">55217338091</data>
+<data key="key2">IND</data>
+<data key="key3">anacristinaamarodasilveira@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">0</data>
+<data key="key6">255</data>
+</node>
+<node id="2207">
+<data key="key0">aluno</data>
+<data key="key1">02220651096</data>
+<data key="key2">APR</data>
+<data key="key3">juliane.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2208">
+<data key="key0">aluno</data>
+<data key="key1">91677653000</data>
+<data key="key2">REP</data>
+<data key="key3">lenita.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2209">
+<data key="key0">aluno</data>
+<data key="key1">77891643091</data>
+<data key="key2">APR</data>
+<data key="key3">mariaantonia.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2210">
+<data key="key0">aluno</data>
+<data key="key1">02753173079</data>
+<data key="key2">REP</data>
+<data key="key3">carolinagondran.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2211">
+<data key="key0">aluno</data>
+<data key="key1">03419491085</data>
+<data key="key2">REP</data>
+<data key="key3">miriancosta.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2212">
+<data key="key0">aluno</data>
+<data key="key1">31515649091</data>
+<data key="key2">APR</data>
+<data key="key3">nereu.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2213">
+<data key="key0">aluno</data>
+<data key="key1">01707694028</data>
+<data key="key2">IND</data>
+<data key="key3">pamela_jm2005@yahoo.com.br</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2214">
+<data key="key0">aluno</data>
+<data key="key1">02233467051</data>
+<data key="key2">APR</data>
+<data key="key3">patriciaalves.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2215">
+<data key="key0">aluno</data>
+<data key="key1">00325412014</data>
+<data key="key2">APR</data>
+<data key="key3">paulaandrea.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2216">
+<data key="key0">aluno</data>
+<data key="key1">01548876097</data>
+<data key="key2">REP</data>
+<data key="key3">paulavieira.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2217">
+<data key="key0">aluno</data>
+<data key="key1">00589979035</data>
+<data key="key2">APR</data>
+<data key="key3">shaiane.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2218">
+<data key="key0">aluno</data>
+<data key="key1">01129770060</data>
+<data key="key2">APR</data>
+<data key="key3">sibeleveiga.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2219">
+<data key="key0">aluno</data>
+<data key="key1">99028727000</data>
+<data key="key2">APR</data>
+<data key="key3">silvana.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2220">
+<data key="key0">aluno</data>
+<data key="key1">03088523031</data>
+<data key="key2">APR</data>
+<data key="key3">tamarasantos.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2221">
+<data key="key0">aluno</data>
+<data key="key1">01254069089</data>
+<data key="key2">APR</data>
+<data key="key3">thaiane.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2222">
+<data key="key0">aluno</data>
+<data key="key1">90680731091</data>
+<data key="key2">IND</data>
+<data key="key3">veredyana@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2223">
+<data key="key0">aluno</data>
+<data key="key1">36462748087</data>
+<data key="key2">APR</data>
+<data key="key3">virginia.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2224">
+<data key="key0">aluno</data>
+<data key="key1">02426962011</data>
+<data key="key2">APR</data>
+<data key="key3">viviane.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2225">
+<data key="key0">aluno</data>
+<data key="key1">96995572068</data>
+<data key="key2">REP</data>
+<data key="key3">vivianerocha.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2226">
+<data key="key0">aluno</data>
+<data key="key1">88899705020</data>
+<data key="key2">APR</data>
+<data key="key3">adrianoj.dreher@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2227">
+<data key="key0">aluno</data>
+<data key="key1">46682503091</data>
+<data key="key2">APR</data>
+<data key="key3">manalene@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2228">
+<data key="key0">aluno</data>
+<data key="key1">00965084000</data>
+<data key="key2">APR</data>
+<data key="key3">celitafriedrich@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2229">
+<data key="key0">aluno</data>
+<data key="key1">02391060084</data>
+<data key="key2">APR</data>
+<data key="key3">clebertavares@mailinator.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1974">
+<data key="key0">tutor</data>
+<data key="key1">00282201025</data>
+<data key="key2">IND</data>
+<data key="key3">alexandracarambula@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2230">
+<data key="key0">aluno</data>
+<data key="key1">01482693038</data>
+<data key="key2">REP</data>
+<data key="key3">cristianenunes85@hotmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2231">
+<data key="key0">aluno</data>
+<data key="key1">97538760091</data>
+<data key="key2">APR</data>
+<data key="key3">daniel.shoufpel@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1976">
+<data key="key0">tutor</data>
+<data key="key1">40416550053</data>
+<data key="key2">IND</data>
+<data key="key3">cristinamacke.tp.hulhanegra@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2232">
+<data key="key0">aluno</data>
+<data key="key1">00467319030</data>
+<data key="key2">APR</data>
+<data key="key3">danielecenta@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2233">
+<data key="key0">aluno</data>
+<data key="key1">01034244078</data>
+<data key="key2">APR</data>
+<data key="key3">diuliane.def@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2234">
+<data key="key0">aluno</data>
+<data key="key1">94199159053</data>
+<data key="key2">APR</data>
+<data key="key3">elianefmachado@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1979">
+<data key="key0">professor</data>
+<data key="key1">80437311015</data>
+<data key="key2">IND</data>
+<data key="key3">francinepinto@hotmail.com</data>
+<data key="key4">0</data>
+<data key="key5">0</data>
+<data key="key6">255</data>
+</node>
+<node id="2235">
+<data key="key0">aluno</data>
+<data key="key1">97941476053</data>
+<data key="key2">APR</data>
+<data key="key3">conforturviagens@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1980">
+<data key="key0">professor</data>
+<data key="key1">40390110159</data>
+<data key="key2">IND</data>
+<data key="key3">rosimeiresimoes@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">0</data>
+<data key="key6">255</data>
+</node>
+<node id="2236">
+<data key="key0">aluno</data>
+<data key="key1">59829362000</data>
+<data key="key2">APR</data>
+<data key="key3">eolitapoz@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1981">
+<data key="key0">professor</data>
+<data key="key1">61386758000</data>
+<data key="key2">IND</data>
+<data key="key3">dani.gael@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">0</data>
+<data key="key6">255</data>
+</node>
+<node id="2237">
+<data key="key0">aluno</data>
+<data key="key1">94906548091</data>
+<data key="key2">APR</data>
+<data key="key3">evajaniracardoso@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1982">
+<data key="key0">tutor</data>
+<data key="key1">00021462070</data>
+<data key="key2">IND</data>
+<data key="key3">fernandatd.clecsjn@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2238">
+<data key="key0">aluno</data>
+<data key="key1">35834285015</data>
+<data key="key2">IND</data>
+<data key="key3">flavioruoso@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1983">
+<data key="key0">tutor</data>
+<data key="key1">01376483084</data>
+<data key="key2">IND</data>
+<data key="key3">marceltdsaojosedonorte@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2239">
+<data key="key0">aluno</data>
+<data key="key1">75638835091</data>
+<data key="key2">APR</data>
+<data key="key3">iaratbdemoraes@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1984">
+<data key="key0">tutor</data>
+<data key="key1">95904336004</data>
+<data key="key2">IND</data>
+<data key="key3">daiani.pedag@hotmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2240">
+<data key="key0">aluno</data>
+<data key="key1">44393512049</data>
+<data key="key2">IND</data>
+<data key="key3">idoleciamaria@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1985">
+<data key="key0">tutor</data>
+<data key="key1">82745757091</data>
+<data key="key2">IND</data>
+<data key="key3">andre.td.sobradinho@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2241">
+<data key="key0">aluno</data>
+<data key="key1">85284122020</data>
+<data key="key2">APR</data>
+<data key="key3">inediagoncalves@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1986">
+<data key="key0">tutor</data>
+<data key="key1">89609239072</data>
+<data key="key2">IND</data>
+<data key="key3">rita.tp.sjn@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2242">
+<data key="key0">aluno</data>
+<data key="key1">00319033040</data>
+<data key="key2">APR</data>
+<data key="key3">ivaniafaber80@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1987">
+<data key="key0">tutor</data>
+<data key="key1">01154246019</data>
+<data key="key2">IND</data>
+<data key="key3">natalia.tp.sjn@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2243">
+<data key="key0">aluno</data>
+<data key="key1">54557500030</data>
+<data key="key2">APR</data>
+<data key="key3">joelmavieira55@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1988">
+<data key="key0">tutor</data>
+<data key="key1">59190434072</data>
+<data key="key2">IND</data>
+<data key="key3">martabernadetetavares@hotmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2244">
+<data key="key0">aluno</data>
+<data key="key1">00233179062</data>
+<data key="key2">IND</data>
+<data key="key3">jukipper1984@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1989">
+<data key="key0">tutor</data>
+<data key="key1">00331060027</data>
+<data key="key2">IND</data>
+<data key="key3">danusa.rs@hotmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2245">
+<data key="key0">aluno</data>
+<data key="key1">03383336069</data>
+<data key="key2">IND</data>
+<data key="key3">kemilikonrad@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1990">
+<data key="key0">tutor</data>
+<data key="key1">93831242020</data>
+<data key="key2">IND</data>
+<data key="key3">eversontdsantanadolivramento@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2246">
+<data key="key0">aluno</data>
+<data key="key1">61138592072</data>
+<data key="key2">IND</data>
+<data key="key3">leniraveronicamuller@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1991">
+<data key="key0">tutor</data>
+<data key="key1">90468228004</data>
+<data key="key2">IND</data>
+<data key="key3">plagiesel@bol.com.br</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2247">
+<data key="key0">aluno</data>
+<data key="key1">81392168015</data>
+<data key="key2">APR</data>
+<data key="key3">lucicarijinho@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1992">
+<data key="key0">professor</data>
+<data key="key1">45462844972</data>
+<data key="key2">IND</data>
+<data key="key3">contato@cristiancechinel.pro.br</data>
+<data key="key4">0</data>
+<data key="key5">0</data>
+<data key="key6">255</data>
+</node>
+<node id="2248">
+<data key="key0">aluno</data>
+<data key="key1">01545554013</data>
+<data key="key2">APR</data>
+<data key="key3">marcosmoser1@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2249">
+<data key="key0">aluno</data>
+<data key="key1">61401510078</data>
+<data key="key2">APR</data>
+<data key="key3">deliscalheiro@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1993">
+<data key="key0">tutor</data>
+<data key="key1">01064483070</data>
+<data key="key2">IND</data>
+<data key="key3">raquelmdemoraes@gmail.com</data>
+<data key="key4">255</data>
+<data key="key5">0</data>
+<data key="key6">0</data>
+</node>
+<node id="2250">
+<data key="key0">aluno</data>
+<data key="key1">00108382010</data>
+<data key="key2">APR</data>
+<data key="key3">guettypires@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2251">
+<data key="key0">aluno</data>
+<data key="key1">01260083020</data>
+<data key="key2">IND</data>
+<data key="key3">martasantelmo@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2252">
+<data key="key0">aluno</data>
+<data key="key1">41773098004</data>
+<data key="key2">APR</data>
+<data key="key3">lagomatilde@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2253">
+<data key="key0">aluno</data>
+<data key="key1">99058731049</data>
+<data key="key2">APR</data>
+<data key="key3">miche.ferrazsouza@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2254">
+<data key="key0">aluno</data>
+<data key="key1">38431556072</data>
+<data key="key2">APR</data>
+<data key="key3">fiuzanelci@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2255">
+<data key="key0">aluno</data>
+<data key="key1">01017709017</data>
+<data key="key2">IND</data>
+<data key="key3">robinhofernandolima@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2256">
+<data key="key0">aluno</data>
+<data key="key1">39928462020</data>
+<data key="key2">IND</data>
+<data key="key3">selitapereira@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2257">
+<data key="key0">aluno</data>
+<data key="key1">99762366034</data>
+<data key="key2">REP</data>
+<data key="key3">mergenkarinesinara@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2258">
+<data key="key0">aluno</data>
+<data key="key1">02161212052</data>
+<data key="key2">APR</data>
+<data key="key3">tassiaturcatto@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2259">
+<data key="key0">aluno</data>
+<data key="key1">02193084033</data>
+<data key="key2">IND</data>
+<data key="key3">driestiago@hotmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2260">
+<data key="key0">aluno</data>
+<data key="key1">77188373000</data>
+<data key="key2">APR</data>
+<data key="key3">torcattovandreia@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2261">
+<data key="key0">aluno</data>
+<data key="key1">29462797072</data>
+<data key="key2">IND</data>
+<data key="key3">veramachadolopes@yahoo.com.br</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2262">
+<data key="key0">aluno</data>
+<data key="key1">80227473000</data>
+<data key="key2">IND</data>
+<data key="key3">vbrixner@hotmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2263">
+<data key="key0">aluno</data>
+<data key="key1">98098985091</data>
+<data key="key2">APR</data>
+<data key="key3">wilson.aluno@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2265">
+<data key="key0">aluno</data>
+<data key="key1">61199117072</data>
+<data key="key2">APR</data>
+<data key="key3">janeteeduete@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2266">
+<data key="key0">aluno</data>
+<data key="key1">02405729040</data>
+<data key="key2">REP</data>
+<data key="key3">jessicaribeiro.ufpel@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2267">
+<data key="key0">aluno</data>
+<data key="key1">39632350049</data>
+<data key="key2">IND</data>
+<data key="key3">luciagonzales546@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2268">
+<data key="key0">aluno</data>
+<data key="key1">01156884047</data>
+<data key="key2">APR</data>
+<data key="key3">daianexclec@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="2269">
+<data key="key0">aluno</data>
+<data key="key1">00674151054</data>
+<data key="key2">IND</data>
+<data key="key3">gabigauterio.clec.sjn@gmail.com </data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1501">
+<data key="key0">professor</data>
+<data key="key1">84154039091</data>
+<data key="key2">IND</data>
+<data key="key3">handerson.joseph82@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">0</data>
+<data key="key6">255</data>
+</node>
+<node id="2272">
+<data key="key0">aluno</data>
+<data key="key1">80311792049</data>
+<data key="key2">APR</data>
+<data key="key3">roberta.clec.sjn@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">255</data>
+<data key="key6">0</data>
+</node>
+<node id="1512">
+<data key="key0">professor</data>
+<data key="key1">32200722087</data>
+<data key="key2">IND</data>
+<data key="key3">trilhote@gmail.com</data>
+<data key="key4">0</data>
+<data key="key5">0</data>
+<data key="key6">255</data>
+</node>
+<edge id="1" source="2215" target="1940">
+<data key="edge_weight_key">186.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="2" source="2140" target="1980">
+<data key="edge_weight_key">51.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="3" source="2171" target="1981">
+<data key="edge_weight_key">65.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="4" source="2158" target="2186">
+<data key="edge_weight_key">68.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="5" source="2232" target="1940">
+<data key="edge_weight_key">153.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="6" source="2248" target="1951">
+<data key="edge_weight_key">137.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="7" source="1982" target="1940">
+<data key="edge_weight_key">22.0</data>
+<data key="key7">TP</data>
+</edge>
+<edge id="8" source="2263" target="2248">
+<data key="edge_weight_key">51.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="9" source="2173" target="2179">
+<data key="edge_weight_key">45.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="10" source="2263" target="1951">
+<data key="edge_weight_key">196.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="11" source="2160" target="1931">
+<data key="edge_weight_key">116.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="12" source="2154" target="1981">
+<data key="edge_weight_key">118.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="13" source="2168" target="2142">
+<data key="edge_weight_key">33.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="14" source="2201" target="2227">
+<data key="edge_weight_key">39.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="15" source="1931" target="2185">
+<data key="edge_weight_key">154.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="16" source="2162" target="1931">
+<data key="edge_weight_key">120.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="17" source="2211" target="2212">
+<data key="edge_weight_key">15.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="18" source="2173" target="2188">
+<data key="edge_weight_key">76.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="19" source="2265" target="1951">
+<data key="edge_weight_key">189.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="20" source="1993" target="2185">
+<data key="edge_weight_key">102.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="21" source="2178" target="2146">
+<data key="edge_weight_key">57.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="22" source="1931" target="1981">
+<data key="edge_weight_key">164.0</data>
+<data key="key7">TP</data>
+</edge>
+<edge id="23" source="2212" target="1982">
+<data key="edge_weight_key">30.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="24" source="2236" target="2248">
+<data key="edge_weight_key">104.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="25" source="2168" target="2179">
+<data key="edge_weight_key">82.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="26" source="1984" target="1940">
+<data key="edge_weight_key">16.0</data>
+<data key="key7">TP</data>
+</edge>
+<edge id="27" source="2158" target="2165">
+<data key="edge_weight_key">92.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="28" source="2263" target="2263">
+<data key="edge_weight_key">236.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="29" source="1984" target="2233">
+<data key="edge_weight_key">181.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="30" source="1931" target="1980">
+<data key="edge_weight_key">157.0</data>
+<data key="key7">TP</data>
+</edge>
+<edge id="31" source="1982" target="2212">
+<data key="edge_weight_key">118.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="32" source="2166" target="1981">
+<data key="edge_weight_key">45.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="33" source="2181" target="1981">
+<data key="edge_weight_key">182.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="34" source="2227" target="1940">
+<data key="edge_weight_key">214.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="35" source="2265" target="1940">
+<data key="edge_weight_key">75.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="36" source="2146" target="2174">
+<data key="edge_weight_key">26.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="37" source="2149" target="2159">
+<data key="edge_weight_key">343.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="38" source="2178" target="1981">
+<data key="edge_weight_key">60.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="39" source="1981" target="2186">
+<data key="edge_weight_key">16.0</data>
+<data key="key7">PA</data>
+</edge>
+<edge id="40" source="2236" target="1940">
+<data key="edge_weight_key">65.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="41" source="2168" target="2166">
+<data key="edge_weight_key">60.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="42" source="1981" target="2188">
+<data key="edge_weight_key">35.0</data>
+<data key="key7">PA</data>
+</edge>
+<edge id="43" source="2168" target="2168">
+<data key="edge_weight_key">151.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="44" source="2211" target="1940">
+<data key="edge_weight_key">117.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="45" source="1984" target="2226">
+<data key="edge_weight_key">169.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="46" source="2131" target="2144">
+<data key="edge_weight_key">44.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="47" source="2258" target="1940">
+<data key="edge_weight_key">202.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="48" source="2229" target="1951">
+<data key="edge_weight_key">384.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="49" source="1982" target="2202">
+<data key="edge_weight_key">16.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="50" source="1982" target="2201">
+<data key="edge_weight_key">73.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="51" source="2242" target="1951">
+<data key="edge_weight_key">69.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="52" source="2156" target="1981">
+<data key="edge_weight_key">122.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="53" source="2146" target="2160">
+<data key="edge_weight_key">34.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="54" source="2217" target="1940">
+<data key="edge_weight_key">44.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="55" source="1983" target="2207">
+<data key="edge_weight_key">67.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="56" source="2196" target="2215">
+<data key="edge_weight_key">79.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="57" source="2207" target="1940">
+<data key="edge_weight_key">45.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="58" source="1981" target="1980">
+<data key="edge_weight_key">54.0</data>
+<data key="key7">PP</data>
+</edge>
+<edge id="59" source="1981" target="2151">
+<data key="edge_weight_key">64.0</data>
+<data key="key7">PA</data>
+</edge>
+<edge id="60" source="2224" target="1940">
+<data key="edge_weight_key">51.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="61" source="2163" target="2169">
+<data key="edge_weight_key">67.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="62" source="2173" target="2133">
+<data key="edge_weight_key">57.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="63" source="1982" target="2272">
+<data key="edge_weight_key">28.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="64" source="2254" target="1940">
+<data key="edge_weight_key">62.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="65" source="2146" target="1981">
+<data key="edge_weight_key">52.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="66" source="1981" target="2163">
+<data key="edge_weight_key">3.0</data>
+<data key="key7">PA</data>
+</edge>
+<edge id="67" source="2154" target="2188">
+<data key="edge_weight_key">56.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="68" source="1981" target="2165">
+<data key="edge_weight_key">15.0</data>
+<data key="key7">PA</data>
+</edge>
+<edge id="69" source="2189" target="2130">
+<data key="edge_weight_key">38.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="70" source="2168" target="2188">
+<data key="edge_weight_key">62.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="71" source="2272" target="1940">
+<data key="edge_weight_key">48.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="72" source="1981" target="2169">
+<data key="edge_weight_key">3.0</data>
+<data key="key7">PA</data>
+</edge>
+<edge id="73" source="2144" target="1980">
+<data key="edge_weight_key">78.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="74" source="2163" target="2151">
+<data key="edge_weight_key">57.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="75" source="2163" target="1981">
+<data key="edge_weight_key">309.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="76" source="2234" target="2226">
+<data key="edge_weight_key">45.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="77" source="2149" target="2188">
+<data key="edge_weight_key">226.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="78" source="2165" target="1931">
+<data key="edge_weight_key">105.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="79" source="2130" target="1980">
+<data key="edge_weight_key">91.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="80" source="2172" target="2189">
+<data key="edge_weight_key">38.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="81" source="2215" target="2252">
+<data key="edge_weight_key">59.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="82" source="2174" target="1980">
+<data key="edge_weight_key">48.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="83" source="2179" target="1981">
+<data key="edge_weight_key">257.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="84" source="2179" target="1980">
+<data key="edge_weight_key">138.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="85" source="2173" target="2154">
+<data key="edge_weight_key">62.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="86" source="1983" target="2220">
+<data key="edge_weight_key">42.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="87" source="1983" target="2224">
+<data key="edge_weight_key">46.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="88" source="2183" target="2166">
+<data key="edge_weight_key">108.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="89" source="2239" target="1984">
+<data key="edge_weight_key">31.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="90" source="1983" target="2218">
+<data key="edge_weight_key">46.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="91" source="1983" target="2219">
+<data key="edge_weight_key">58.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="92" source="2189" target="1981">
+<data key="edge_weight_key">38.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="93" source="2263" target="2232">
+<data key="edge_weight_key">24.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="94" source="2194" target="1940">
+<data key="edge_weight_key">43.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="95" source="2263" target="1940">
+<data key="edge_weight_key">572.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="96" source="1981" target="2149">
+<data key="edge_weight_key">20.0</data>
+<data key="key7">PA</data>
+</edge>
+<edge id="97" source="2220" target="2201">
+<data key="edge_weight_key">60.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="98" source="1983" target="2212">
+<data key="edge_weight_key">39.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="99" source="1983" target="2211">
+<data key="edge_weight_key">56.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="100" source="2233" target="1985">
+<data key="edge_weight_key">69.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="101" source="1983" target="2215">
+<data key="edge_weight_key">51.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="102" source="2233" target="1984">
+<data key="edge_weight_key">32.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="103" source="2183" target="1980">
+<data key="edge_weight_key">100.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="104" source="2272" target="2201">
+<data key="edge_weight_key">19.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="105" source="2212" target="2211">
+<data key="edge_weight_key">20.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="106" source="2134" target="2131">
+<data key="edge_weight_key">14.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="107" source="2134" target="2133">
+<data key="edge_weight_key">29.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="108" source="2237" target="1984">
+<data key="edge_weight_key">22.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="109" source="2161" target="1931">
+<data key="edge_weight_key">44.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="110" source="2169" target="1981">
+<data key="edge_weight_key">134.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="111" source="2188" target="2171">
+<data key="edge_weight_key">35.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="112" source="2130" target="1931">
+<data key="edge_weight_key">75.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="113" source="1982" target="2196">
+<data key="edge_weight_key">99.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="114" source="2201" target="2197">
+<data key="edge_weight_key">21.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="115" source="2209" target="2201">
+<data key="edge_weight_key">25.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="116" source="2233" target="1951">
+<data key="edge_weight_key">114.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="117" source="2192" target="1940">
+<data key="edge_weight_key">64.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="118" source="2136" target="1980">
+<data key="edge_weight_key">50.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="119" source="2266" target="2254">
+<data key="edge_weight_key">25.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="120" source="2158" target="1940">
+<data key="edge_weight_key">76.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="121" source="2169" target="2169">
+<data key="edge_weight_key">95.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="122" source="2174" target="2160">
+<data key="edge_weight_key">50.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="123" source="1940" target="1951">
+<data key="edge_weight_key">49.0</data>
+<data key="key7">PP</data>
+</edge>
+<edge id="124" source="1985" target="2260">
+<data key="edge_weight_key">106.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="125" source="2188" target="2165">
+<data key="edge_weight_key">37.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="126" source="2141" target="1980">
+<data key="edge_weight_key">315.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="127" source="2218" target="1983">
+<data key="edge_weight_key">67.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="128" source="2252" target="1951">
+<data key="edge_weight_key">333.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="129" source="1940" target="1940">
+<data key="edge_weight_key">125.0</data>
+<data key="key7">PP</data>
+</edge>
+<edge id="130" source="2228" target="2201">
+<data key="edge_weight_key">54.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="131" source="2170" target="2130">
+<data key="edge_weight_key">42.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="132" source="2165" target="1981">
+<data key="edge_weight_key">104.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="133" source="2188" target="1980">
+<data key="edge_weight_key">94.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="134" source="2188" target="1981">
+<data key="edge_weight_key">80.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="135" source="2249" target="1940">
+<data key="edge_weight_key">118.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="136" source="2162" target="2162">
+<data key="edge_weight_key">121.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="137" source="2141" target="2130">
+<data key="edge_weight_key">272.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="138" source="2252" target="2231">
+<data key="edge_weight_key">41.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="139" source="2226" target="1951">
+<data key="edge_weight_key">73.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="140" source="2134" target="2141">
+<data key="edge_weight_key">76.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="141" source="2134" target="1976">
+<data key="edge_weight_key">18.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="142" source="2159" target="1981">
+<data key="edge_weight_key">62.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="143" source="2233" target="1940">
+<data key="edge_weight_key">113.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="144" source="2162" target="2151">
+<data key="edge_weight_key">226.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="145" source="2190" target="2130">
+<data key="edge_weight_key">57.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="146" source="2131" target="2154">
+<data key="edge_weight_key">29.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="147" source="1976" target="2134">
+<data key="edge_weight_key">37.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="148" source="1931" target="2131">
+<data key="edge_weight_key">31.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="149" source="2231" target="2272">
+<data key="edge_weight_key">92.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="150" source="1931" target="2133">
+<data key="edge_weight_key">193.0</data>
+<data key="key7">TA</data>
+</edge>
+<edge id="151" source="2252" target="2227">
+<data key="edge_weight_key">79.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="152" source="2131" target="1980">
+<data key="edge_weight_key">59.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="153" source="2219" target="2215">
+<data key="edge_weight_key">15.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="154" source="2131" target="2159">
+<data key="edge_weight_key">42.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="155" source="2218" target="2224">
+<data key="edge_weight_key">69.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="156" source="2133" target="1980">
+<data key="edge_weight_key">35.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="157" source="2202" target="1982">
+<data key="edge_weight_key">27.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="158" source="2158" target="2153">
+<data key="edge_weight_key">77.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="159" source="2147" target="1981">
+<data key="edge_weight_key">139.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="160" source="2160" target="1981">
+<data key="edge_weight_key">154.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="161" source="2227" target="1951">
+<data key="edge_weight_key">316.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="162" source="2172" target="2130">
+<data key="edge_weight_key">30.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="163" source="2157" target="1981">
+<data key="edge_weight_key">43.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="164" source="2196" target="1982">
+<data key="edge_weight_key">6.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="165" source="2161" target="2169">
+<data key="edge_weight_key">63.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="166" source="2151" target="1981">
+<data key="edge_weight_key">493.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="167" source="2133" target="2141">
+<data key="edge_weight_key">73.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="168" source="2192" target="2202">
+<data key="edge_weight_key">31.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="169" source="2226" target="1984">
+<data key="edge_weight_key">71.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="170" source="1940" target="1981">
+<data key="edge_weight_key">49.0</data>
+<data key="key7">PP</data>
+</edge>
+<edge id="171" source="1940" target="1980">
+<data key="edge_weight_key">125.0</data>
+<data key="key7">PP</data>
+</edge>
+<edge id="172" source="2134" target="1940">
+<data key="edge_weight_key">63.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="173" source="2219" target="1940">
+<data key="edge_weight_key">36.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="174" source="2133" target="1976">
+<data key="edge_weight_key">52.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="175" source="2220" target="1983">
+<data key="edge_weight_key">46.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="176" source="2212" target="1940">
+<data key="edge_weight_key">115.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="177" source="2149" target="1940">
+<data key="edge_weight_key">307.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="178" source="2133" target="2133">
+<data key="edge_weight_key">66.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="179" source="2161" target="1981">
+<data key="edge_weight_key">109.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="180" source="2158" target="2130">
+<data key="edge_weight_key">62.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="181" source="2247" target="1940">
+<data key="edge_weight_key">141.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="182" source="2133" target="2130">
+<data key="edge_weight_key">42.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="183" source="2211" target="1983">
+<data key="edge_weight_key">105.0</data>
+<data key="key7">AT</data>
+</edge>
+<edge id="184" source="2158" target="2133">
+<data key="edge_weight_key">24.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="185" source="2142" target="1980">
+<data key="edge_weight_key">86.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="186" source="2237" target="1951">
+<data key="edge_weight_key">58.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="187" source="2209" target="1940">
+<data key="edge_weight_key">27.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="188" source="2197" target="1940">
+<data key="edge_weight_key">29.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="189" source="2166" target="2188">
+<data key="edge_weight_key">38.0</data>
+<data key="key7">AA</data>
+</edge>
+<edge id="190" source="2260" target="1940">
+<data key="edge_weight_key">50.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="191" source="2203" target="1940">
+<data key="edge_weight_key">58.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="192" source="2186" target="1981">
+<data key="edge_weight_key">41.0</data>
+<data key="key7">AP</data>
+</edge>
+<edge id="193" source="2178" target="1940">
+<data key="edge_weight_key">33.0</data>
+<data key="key7">AP</data>
+</edge>
+</graph>
+</graphml>

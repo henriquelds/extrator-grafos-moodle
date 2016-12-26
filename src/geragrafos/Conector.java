@@ -155,6 +155,21 @@ public class Conector {
         return map;
     }
 
+    public Long getBeginningFromCourse(int course) throws SQLException{
+        String query = "SELECT p.id, to_timestamp(p.created), p.created, p.parent, p.userid, p.message FROM\n" +
+        "mdl_forum_posts p\n" +
+        "JOIN mdl_forum_discussions d ON d.id = p.discussion\n" +
+        "WHERE\n" +"d.course =";
+        query = query+"'"+course+"'ORDER BY p.created LIMIT 1;";
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        Long beg = Long.parseLong("0");
+        while(rs.next()){
+        beg = rs.getLong(3);
+        }
+        return beg;
+    }
+    
     public HashMap<String,CustomWeightedEdge> getEdges(int course, HashMap<Integer,CustomVertex> map, long inicio, long fim) throws FileNotFoundException, SQLException {
         ArrayList<Post> posts = getPosts(course, inicio, fim);
         HashMap<String,CustomWeightedEdge> edges = new HashMap<String,CustomWeightedEdge>();

@@ -1523,21 +1523,5 @@
 <data key="key5">0</data>
 <data key="key6">255</data>
 </node>
-<edge id="1" source="2194" target="1982">
-<data key="edge_weight_key">20.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="2" source="2130" target="2141">
-<data key="edge_weight_key">23.0</data>
-<data key="key7">AA</data>
-</edge>
-<edge id="3" source="2272" target="1940">
-<data key="edge_weight_key">79.0</data>
-<data key="key7">AP</data>
-</edge>
-<edge id="4" source="2144" target="1980">
-<data key="edge_weight_key">96.0</data>
-<data key="key7">AP</data>
-</edge>
 </graph>
 </graphml>

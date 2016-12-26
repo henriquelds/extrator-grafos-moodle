@@ -48,7 +48,7 @@ public class GeraGrafos {
         Conector c = new Conector("postgres", "1234", "clec");
         //c.conecta();
         int course = 65; //curso.getId();
-        long inicio = 1383150368;
+        long inicio = c.getBeginningFromCourse(course);//1383150368;
         long fim;
         //ArrayList<Curso> cursos = c.getCursos();
         for(int week=1;week <= 7;week++){
@@ -75,7 +75,7 @@ public class GeraGrafos {
                 CustomVertex target = users.get(e.getTargeUserId());
                 graph.addEdge(source, target, e);
                 CustomWeightedEdge ced = graph.getEdge(source, target);
-                graph.setEdgeWeight(ced, e.getPeso());
+                graph.setEdgeWeight(ced, e.getPeso()+1);
             }
         
         

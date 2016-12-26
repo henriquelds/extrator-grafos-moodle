@@ -1577,181 +1577,21 @@
 <data key="key5">0</data>
 <data key="key6">255</data>
 </node>
-<edge id="1" source="2237" target="927">
-<data key="edge_weight_key">24.0</data>
+<edge id="1" source="2265" target="927">
+<data key="edge_weight_key">77.0</data>
 <data key="key7">AP</data>
 </edge>
-<edge id="2" source="2143" target="927">
-<data key="edge_weight_key">34.0</data>
-<data key="key7">AP</data>
-</edge>
-<edge id="3" source="2254" target="927">
-<data key="edge_weight_key">67.0</data>
-<data key="key7">AP</data>
-</edge>
-<edge id="4" source="2215" target="1983">
-<data key="edge_weight_key">45.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="5" source="2253" target="927">
-<data key="edge_weight_key">22.0</data>
-<data key="key7">AP</data>
-</edge>
-<edge id="6" source="1984" target="2236">
-<data key="edge_weight_key">25.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="7" source="1984" target="2235">
-<data key="edge_weight_key">29.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="8" source="2229" target="1985">
-<data key="edge_weight_key">9.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="9" source="1984" target="2233">
-<data key="edge_weight_key">30.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="10" source="2237" target="1984">
-<data key="edge_weight_key">19.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="11" source="1951" target="2252">
-<data key="edge_weight_key">32.0</data>
-<data key="key7">PA</data>
-</edge>
-<edge id="12" source="2131" target="927">
-<data key="edge_weight_key">15.0</data>
-<data key="key7">AP</data>
-</edge>
-<edge id="13" source="1983" target="2201">
-<data key="edge_weight_key">16.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="14" source="2233" target="2229">
-<data key="edge_weight_key">40.0</data>
-<data key="key7">AA</data>
-</edge>
-<edge id="15" source="2254" target="1985">
-<data key="edge_weight_key">9.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="16" source="1985" target="2254">
-<data key="edge_weight_key">27.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="17" source="2201" target="1983">
-<data key="edge_weight_key">10.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="18" source="1985" target="2252">
-<data key="edge_weight_key">27.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="19" source="2239" target="1984">
-<data key="edge_weight_key">15.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="20" source="1984" target="2242">
-<data key="edge_weight_key">23.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="21" source="2141" target="927">
-<data key="edge_weight_key">160.0</data>
-<data key="key7">AP</data>
-</edge>
-<edge id="22" source="2236" target="1984">
-<data key="edge_weight_key">37.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="23" source="2196" target="2201">
-<data key="edge_weight_key">20.0</data>
-<data key="key7">AA</data>
-</edge>
-<edge id="24" source="2168" target="2168">
+<edge id="2" source="2200" target="2219">
 <data key="edge_weight_key">11.0</data>
 <data key="key7">AA</data>
 </edge>
-<edge id="25" source="2162" target="2163">
-<data key="edge_weight_key">46.0</data>
-<data key="key7">AA</data>
-</edge>
-<edge id="26" source="2143" target="1931">
-<data key="edge_weight_key">40.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="27" source="2162" target="2162">
-<data key="edge_weight_key">46.0</data>
-<data key="key7">AA</data>
-</edge>
-<edge id="28" source="2168" target="1993">
-<data key="edge_weight_key">30.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="29" source="2200" target="2219">
-<data key="edge_weight_key">10.0</data>
-<data key="key7">AA</data>
-</edge>
-<edge id="30" source="1931" target="2143">
-<data key="edge_weight_key">9.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="31" source="1984" target="2265">
-<data key="edge_weight_key">30.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="32" source="2168" target="2162">
-<data key="edge_weight_key">11.0</data>
-<data key="key7">AA</data>
-</edge>
-<edge id="33" source="2252" target="1985">
-<data key="edge_weight_key">4.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="34" source="1993" target="2168">
-<data key="edge_weight_key">39.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="35" source="2131" target="1931">
-<data key="edge_weight_key">2.0</data>
-<data key="key7">AT</data>
-</edge>
-<edge id="36" source="2252" target="927">
-<data key="edge_weight_key">32.0</data>
+<edge id="3" source="2156" target="927">
+<data key="edge_weight_key">14.0</data>
 <data key="key7">AP</data>
 </edge>
-<edge id="37" source="1983" target="2196">
-<data key="edge_weight_key">49.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="38" source="1951" target="1951">
+<edge id="4" source="2254" target="1985">
 <data key="edge_weight_key">30.0</data>
-<data key="key7">PP</data>
-</edge>
-<edge id="39" source="2143" target="2143">
-<data key="edge_weight_key">25.0</data>
-<data key="key7">AA</data>
-</edge>
-<edge id="40" source="2254" target="2141">
-<data key="edge_weight_key">6.0</data>
-<data key="key7">AA</data>
-</edge>
-<edge id="41" source="2247" target="927">
-<data key="edge_weight_key">31.0</data>
-<data key="key7">AP</data>
-</edge>
-<edge id="42" source="1993" target="2162">
-<data key="edge_weight_key">8.0</data>
-<data key="key7">TA</data>
-</edge>
-<edge id="43" source="2233" target="2236">
-<data key="edge_weight_key">19.0</data>
-<data key="key7">AA</data>
-</edge>
-<edge id="44" source="1983" target="2215">
-<data key="edge_weight_key">67.0</data>
-<data key="key7">TA</data>
+<data key="key7">AT</data>
 </edge>
 </graph>
 </graphml>
