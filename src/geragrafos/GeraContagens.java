@@ -18,15 +18,15 @@ import java.util.Scanner;
  * @author Henrique
  */
 public class GeraContagens {
-    private static String dataPath="E:\\curso\\TCC\\Codigos\\Data\\Contagens\\CLEC\\";
+    private static String dataPath="E:\\curso\\TCC\\Codigos\\Data\\Contagens\\Contabilidade\\";
     private static String[] header = {"id", "c_w1", "c_w2","c_w3","c_w4","c_w5","c_w6","c_w7","sit"};
     
     public static void main(String[] args) throws FileNotFoundException, SQLException, IOException{
-        Conector c = new Conector("postgres", "1234", "clec");
+        Conector c = new Conector("postgres", "1234", "ifsul-new");
         
-        int course=35;
+        int course=173;
         ArrayList<CustomVertex> alunos = getAlunos(course);
-        long inicio = 1366214597;
+        long inicio = 1426522265;
         
         for(int week=1; week <=7; week++){
             FileWriter fw = new FileWriter(dataPath+"metrics_course_"+course+"_w"+week+".csv");
