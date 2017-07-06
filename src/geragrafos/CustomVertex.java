@@ -5,6 +5,8 @@
  */
 package geragrafos;
 
+import java.util.ArrayList;
+
 
 /**
  *
@@ -15,10 +17,12 @@ package geragrafos;
     {
         private String id, tipo,username,email,sit;
         private Color color;
+        private ArrayList<Integer> interacoes;
 
         public CustomVertex(String id)
         {
             this(id, null,null,null,null,null);
+            interacoes = new ArrayList<Integer>();
         }
 
         public CustomVertex(String id, Color color, String tipo, String matricula,String email,String sit)
@@ -29,6 +33,15 @@ package geragrafos;
             this.username = matricula;
             this.email = email;
             this.sit = sit;
+            interacoes = new ArrayList<Integer>();
+        }
+
+        public ArrayList<Integer> getInteracoes() {
+            return interacoes;
+        }
+
+        public void setInteracoes(ArrayList<Integer> interacoes) {
+            this.interacoes = interacoes;
         }
 
         public String getSit() {

@@ -170,6 +170,19 @@ public class Conector {
         return beg;
     }
     
+    public int getInteractions(int course, int user, long inicio, long fim) throws SQLException{
+        String query = "SELECT count(id)\n" +
+                "FROM mdl_log WHERE (userid='"+user+"' and course='"+course+"')\n" +
+                "and (time>='"+inicio+"' and time<'"+fim+"');";
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        int count=0;
+        while(rs.next()){
+            count = rs.getInt(1);
+        }
+        return count;
+    }
+    
     public HashMap<String,CustomWeightedEdge> getEdges(int course, HashMap<Integer,CustomVertex> map, long inicio, long fim) throws FileNotFoundException, SQLException {
         ArrayList<Post> posts = getPosts(course, inicio, fim);
         HashMap<String,CustomWeightedEdge> edges = new HashMap<String,CustomWeightedEdge>();
