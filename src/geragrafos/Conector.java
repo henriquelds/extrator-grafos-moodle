@@ -383,6 +383,23 @@ public class Conector {
         return array;
     }*/
     
+    public ArrayList<Integer> getInstDesign(int course) throws SQLException{
+        String[] items = {"forum","chat","resource","assignment","url","page","book","choice","glossary","quiz","wiki"};
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        String head = "SELECT COUNT(id)\n" + "  FROM mdl_";
+        String tail = " WHERE course ='"+course+"'";
+        
+        for(int i=0;i<items.length;i++){
+            String query = head+items[i]+tail;
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(query);
+            arr.add(rs.getInt(1));
+        }
+        
+        return arr;
+    }
+    
+    
     public ArrayList<Aluno> getAlunosDeUmCurso(int course) throws FileNotFoundException, SQLException {
         ArrayList<Aluno> array = new ArrayList<Aluno>();
         String query = new Scanner(new File(queriesPath+"alunosDeUmCurso.sql")).useDelimiter("\\Z").next();
