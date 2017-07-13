@@ -393,6 +393,7 @@ public class Conector {
             String query = head+items[i]+tail;
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(query);
+            rs.next();
             arr.add(rs.getInt(1));
         }
         
