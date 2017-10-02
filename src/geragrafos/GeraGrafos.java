@@ -41,6 +41,7 @@ import org.xml.sax.SAXException;
  */
 public class GeraGrafos {
     private static String dataPath = "data\\";
+    private static String writePath = "E:\\curso\\TCC\\Codigos\\Data\\CLEC\\";
     /**
      * @param args the command line arguments
      */
@@ -83,7 +84,7 @@ public class GeraGrafos {
             FileWriter w;
             try {
                 GraphMLExporter<CustomVertex, CustomWeightedEdge> exporter = createExporter(); 
-                w = new FileWriter(dataPath+"graph_course_"+course+"_w"+week+".graphml");
+                w = new FileWriter(writePath+"qtmsg_graph_course_"+course+"_w"+week+".graphml");
                 exporter.export(w, graph);
             } catch (IOException ex) {
                 ex.printStackTrace();

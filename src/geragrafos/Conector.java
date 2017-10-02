@@ -199,14 +199,16 @@ public class Conector {
                 String concat = ""+sourceUserId+"-"+targetUserId;
                 if(edges.containsKey(concat)){
                     CustomWeightedEdge ced = edges.get(concat);
-                    ced.setPeso(ced.getPeso()+p.getWordCount());
+                    //ced.setPeso(ced.getPeso()+p.getWordCount());  wordcount
+                    ced.setPeso(ced.getPeso()+1);          //contagem de mensagens
                 }
                 else{
                     CustomVertex source = map.get(sourceUserId);
                     CustomVertex target = map.get(targetUserId);
                     if(source != null && target != null){
                         String tipo = CustomVertex.compara(source,target);
-                        double peso = p.getWordCount();
+                        //double peso = p.getWordCount();   wordcount
+                        double peso = 1;           //contagem de mensagens
                         CustomWeightedEdge ced = new CustomWeightedEdge(sourceUserId,targetUserId,tipo,peso);
                         edges.put(concat, ced);
                     }
