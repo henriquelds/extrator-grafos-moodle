@@ -5,3 +5,7 @@ em uma versão PostgreSQL (instalada localmente, para alterar verifique o arquiv
 
 As arestas dos grafos são dadas por interações entre usuários (vértices) no fórum de uma dada disciplina. A partir de uma data inicial, são gerados
 grafos semanais cumulativos da disciplina.
+
+Autores:
+Henrique Lemos dos Santos - hlsantos@inf.ufrgs.br
+Cristian Cechinel - contato@cristiancechinel.pro.br
